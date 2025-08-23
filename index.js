@@ -1,6 +1,8 @@
 import { Resend } from "resend";
-import { adminEmailTemplate } from "./emailTemplate.js";
 import dotenv from "dotenv";
+import { adminEmailTemplate } from "./adminEmailTemplate.js";
+import { invitationEmail } from "./invitationEmail.js";
+import { howToUse } from "./howToUse.js";
 
 dotenv.config();
 
@@ -8,47 +10,47 @@ const resendApiKey = process.env.RESEND_API_KEY;
 
 const resend = new Resend(resendApiKey);
 
-export const sendCompanyCreationEmail = async (
-  adminEmail,
-  inviteeName,
-  eventType,
-  inviteeNameSecond,
-  inviteeEmail,
-  additionalGuest,
-  eventDateAndTime,
-  meetingLink,
-  inviteeTz
-) => {
+export const sendCompanyCreationEmail = async (adminEmail) => {
   try {
+    const inviteParams = {
+      signUpLink: "https://fdev.soleapp.com.au/",
+      unsubscribeLink: "https://fdev.soleapp.com.au/",
+      twitterLink: "https://x.com/home",
+      linkedinLink: "https://www.linkedin.com/",
+      facebookLink: "https://www.facebook.com/",
+      helpcenterLink: "https://fdev.soleapp.com.au/",
+      privacyLink: "https://fdev.soleapp.com.au/",
+      termsLink: "https://fdev.soleapp.com.au/",
+    };
+
+    const howToUseParams = {
+      userName: "Rahul Joshi",
+      founderName: "Johann Oberholzer",
+      twitterLink: "https://x.com/home",
+      linkedinLink: "https://www.linkedin.com/",
+      facebookLink: "https://www.facebook.com/",
+      helpcenterLink: "https://fdev.soleapp.com.au/",
+      privacyLink: "https://fdev.soleapp.com.au/",
+      termsLink: "https://fdev.soleapp.com.au/",
+      appStoreLink: "https://www.apple.com/in/app-store/",
+      playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+    };
     await resend.emails.send({
-      from: "Waply <support@paidearly.in>",
+      from: "PaidEarly <support@paidearly.in>",
       to: adminEmail,
-      subject: "New Event: Rahul - 02:00pm Thu, 3 Apr 2025 - 30 Minute Meeting",
-      html: adminEmailTemplate(
-        inviteeName,
-        eventType,
-        inviteeNameSecond,
-        inviteeEmail,
-        additionalGuest,
-        eventDateAndTime,
-        meetingLink,
-        inviteeTz
-      ),
+      subject: "Welcome to Sole",
+      html: invitationEmail(inviteParams),
+    });
+    await resend.emails.send({
+      from: "PaidEarly <support@paidearly.in>",
+      to: adminEmail,
+      subject: "Welcome to Sole",
+      html: howToUse(howToUseParams),
     });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {
-    console.error(`Error sending email to ${adminEmail}:`, error.message);
+    console.error(`Error sending email to ${adminEmail}:`, error);
   }
 };
 
-sendCompanyCreationEmail(
-  "2000rahuljoshi@gmail.com",
-  "Ashish Rautela",
-  "60 min meeting with Rahul",
-  "Ashish",
-  "ashish@gmail.com",
-  ["jatin@gmail.com", "ashish@gmail.com"],
-  "04:30pm - Friday, 4 April 2025 (Eastern Time - US & Canada)",
-  "https://meet.google.com/jzg-xmnb-wpa",
-  "India Standard Time"
-);
+sendCompanyCreationEmail("2000rahuljoshi@gmail.com");

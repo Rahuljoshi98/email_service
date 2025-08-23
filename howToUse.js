@@ -9,6 +9,7 @@ export const howToUse = ({
   termsLink,
   appStoreLink,
   playStoreLink,
+  knowledgeBaseLink,
 }) => `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -261,8 +262,17 @@ export const howToUse = ({
                                                       font-weight: 400;
                                                     "
                                                   >
-                                                    1. Navigate to our knowledge
-                                                    base
+                                                    1. Navigate to 
+                                                    <a
+                                                      href="${knowledgeBaseLink}"
+                                                      data-source-line="71"
+                                                      style="
+                                                        color: #375dfb;
+                                                        text-decoration-line: underline;
+                                                      "
+                                                      target="_blank"
+                                                      >our knowledge base
+                                                    </a>
                                                   </td>
                                                 </tr>
                                               </table>

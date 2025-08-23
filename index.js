@@ -34,6 +34,7 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
       termsLink: "https://fdev.soleapp.com.au/",
       appStoreLink: "https://www.apple.com/in/app-store/",
       playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+      knowledgeBaseLink: "https://fdev.soleapp.com.au/",
     };
     await resend.emails.send({
       from: "PaidEarly <support@paidearly.in>",

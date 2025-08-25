@@ -1,7 +1,6 @@
-export const quotes = ({
+export const otp = ({
   userName,
-  quoteAmt,
-  quoteId,
+  otp,
   twitterLink,
   linkedinLink,
   facebookLink,
@@ -141,7 +140,7 @@ export const quotes = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      New Quote
+                                      Verify Your Sole Account
                                     </h1>
                                     <p
                                       style="
@@ -167,14 +166,53 @@ export const quotes = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      Here is a quote the amount of
-                                      <span style="font-weight: 600">
-                                        ${quoteAmt}
-                                      </span>
-                                      from
-                                      <span style="font-weight: 600">
-                                        ${quoteId} .
-                                      </span>
+                                      Thanks for signing up! To activate your
+                                      account, please enter the following
+                                      one-time code in the app:
+                                    </p>
+
+                                    <p
+                                      style="
+                                        color: #0a0d14;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        margin-top: 14px;
+                                        margin-bottom: 0;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
+                                      "
+                                    >
+                                      ${otp}
+                                    </p>
+
+                                    <p
+                                      style="
+                                        color: #0a0d14;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-top: 12px;
+                                        margin-bottom: 0;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
+                                      "
+                                    >
+                                      This code will expire in 10 minutes, so be
+                                      sure to use it right away.
+                                    </p>
+
+                                    <p
+                                      style="
+                                        color: #0a0d14;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-top: 12px;
+                                        margin-bottom: 0;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
+                                      "
+                                    >
+                                      If you didn’t sign up for Sole, you can
+                                      safely ignore this email.
                                     </p>
 
                                     <!-- best regards -->

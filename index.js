@@ -4,6 +4,7 @@ import { invitationEmail } from "./EmailTemplates/invitationEmail.js";
 import { howToUse } from "./EmailTemplates/howToUse.js";
 import { trialOver } from "./EmailTemplates/trialOver.js";
 import { support } from "./EmailTemplates/support.js";
+import { quotes } from "./EmailTemplates/quotes.js";
 
 dotenv.config();
 
@@ -68,6 +69,20 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
       loginLink: "https://fdev.soleapp.com.au/",
       regardsBy: "Neeraj Verma",
     };
+
+    const quoteParams = {
+      userName: "Ashish Rautela",
+      quoteAmt: "AUD $225.00",
+      quoteId: "22222222",
+      twitterLink: "https://x.com/home",
+      linkedinLink: "https://www.linkedin.com/",
+      facebookLink: "https://www.facebook.com/",
+      helpcenterLink: "https://fdev.soleapp.com.au/",
+      privacyLink: "https://fdev.soleapp.com.au/",
+      termsLink: "https://fdev.soleapp.com.au/",
+      appStoreLink: "https://www.apple.com/in/app-store/",
+      playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+    };
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
     //   to: adminEmail,
@@ -86,12 +101,18 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   subject: "Welcome to Sole",
     //   html: trialOver(trialOverParams),
     // });
-    await resend.emails.send({
-      from: "PaidEarly <support@paidearly.in>",
-      to: adminEmail,
-      subject: "Welcome to Sole",
-      html: support(supportParams),
-    });
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: support(supportParams),
+    // });
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: quotes(quoteParams),
+    // });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {
     console.error(`Error sending email to ${adminEmail}:`, error);

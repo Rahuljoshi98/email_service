@@ -1,6 +1,8 @@
-export const trialOver = ({
+export const quotes = ({
   userName,
-  trialEndDate,
+  quoteAmt,
+  quoteId,
+  regardsBy,
   twitterLink,
   linkedinLink,
   facebookLink,
@@ -9,8 +11,6 @@ export const trialOver = ({
   termsLink,
   appStoreLink,
   playStoreLink,
-  bootcampLink,
-  supportHubLink,
 }) => `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -142,21 +142,8 @@ export const trialOver = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      Your trial is almost over
+                                      New Quote
                                     </h1>
-                                    <p
-                                      style="
-                                        color: #0a0d14;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        margin-top: 14px;
-                                        margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
-                                      "
-                                    >
-                                      Choose a plan to suit your business
-                                    </p>
                                     <p
                                       style="
                                         color: #0a0d14;
@@ -181,110 +168,15 @@ export const trialOver = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      A friendly reminder that your free Sole
-                                      trial ends on
+                                      Here is a quote the amount of
                                       <span style="font-weight: 600">
-                                        ${trialEndDate}.
+                                        ${quoteAmt}
+                                      </span>
+                                      from
+                                      <span style="font-weight: 600">
+                                        ${quoteId} .
                                       </span>
                                     </p>
-                                    <p
-                                      style="
-                                        color: #0a0d14;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        margin-top: 12px;
-                                        margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
-                                      "
-                                    >
-                                      To help get you started (if you haven’t
-                                      made it that far yet!) check out the 10
-                                      minute bootcamp to get going fast, or
-                                      visit our dedicated Aussie Support Hub for
-                                      user guides or help on how to use Sole.
-                                    </p>
-
-                                    <p
-                                      style="
-                                        color: #0a0d14;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        margin-top: 12px;
-                                        margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
-                                      "
-                                    >
-                                      You will need to create a username and
-                                      password to access the Support Hub. This
-                                      will ensure that you have full visibility
-                                      of the status.
-                                    </p>
-
-                                    <!-- btns -->
-                                    <table
-                                      role="presentation"
-                                      cellspacing="0"
-                                      cellpadding="0"
-                                      border="0"
-                                      style="margin-top: 18px"
-                                    >
-                                      <tr>
-                                        <!-- 10 min bootcamp -->
-                                        <td
-                                          align="center"
-                                          style="border-radius: 0px"
-                                        >
-                                          <a
-                                            href="${bootcampLink}"
-                                            style="
-                                              display: inline-block;
-                                              font-family: 'Plus Jakarta Sans',
-                                                Arial, Helvetica, sans-serif;
-                                              font-size: 14px;
-                                              font-weight: 500;
-                                              color: #ffffff;
-                                              text-decoration: none;
-                                              padding: 10px 20px;
-                                              border-radius: 8px;
-                                              background-color: #007bff;
-                                            "
-                                          >
-                                            10 Minute Bootcamp
-                                          </a>
-                                        </td>
-
-                                        <!-- Space between buttons -->
-                                        <td width="12">&nbsp;</td>
-
-                                        <!-- Outline Button -->
-                                        <td
-                                          align="center"
-                                          style="
-                                            border-radius: 8px;
-                                            border: 1px solid #4d4dff;
-                                          "
-                                        >
-                                          <a
-                                            href="${supportHubLink}"
-                                            style="
-                                              display: inline-block;
-                                              font-family: 'Plus Jakarta Sans',
-                                                Arial, Helvetica, sans-serif;
-                                              font-size: 14px;
-                                              font-weight: 500;
-                                              color: #4f46e5;
-                                              text-decoration: none;
-                                              padding: 10px 20px;
-                                              border-radius: 8px;
-                                            "
-                                          >
-                                            Support Hub
-                                          </a>
-                                        </td>
-                                      </tr>
-                                    </table>
 
                                     <!-- best regards -->
                                     <div>
@@ -313,7 +205,7 @@ export const trialOver = ({
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
-                                        Sole App Team
+                                        The Sole Team
                                       </p>
                                     </div>
 
@@ -339,7 +231,6 @@ export const trialOver = ({
                                             cellspacing="0"
                                             cellpadding="0"
                                             border="0"
-                                            width="100%"
                                             style="
                                               border-radius: 12px;
                                               background: linear-gradient(
@@ -348,6 +239,7 @@ export const trialOver = ({
                                                 #001b70 100%
                                               );
                                               text-align: center;
+                                              width: 100%;
                                             "
                                           >
                                             <tr>
@@ -399,7 +291,7 @@ export const trialOver = ({
                                                   style="margin: auto"
                                                 >
                                                   <tr>
-                                                    <td style="padding: 0 8px">
+                                                    <td>
                                                       <a
                                                         href="${appStoreLink}"
                                                         target="_blank"
@@ -413,11 +305,12 @@ export const trialOver = ({
                                                             border: none;
                                                             outline: none;
                                                             text-decoration: none;
+                                                            padding: 0 8px;
                                                           "
                                                         />
                                                       </a>
                                                     </td>
-                                                    <td style="padding: 0 8px">
+                                                    <td>
                                                       <a
                                                         href="${playStoreLink}"
                                                         target="_blank"
@@ -431,6 +324,7 @@ export const trialOver = ({
                                                             border: none;
                                                             outline: none;
                                                             text-decoration: none;
+                                                            padding: 0 8px;
                                                           "
                                                         />
                                                       </a>

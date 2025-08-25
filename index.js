@@ -8,6 +8,7 @@ import { quotes } from "./EmailTemplates/quotes.js";
 import { verification } from "./EmailTemplates/verification.js";
 import { otp } from "./EmailTemplates/otp.js";
 import { invoiceReminder } from "./EmailTemplates/invoiceReminder.js";
+import { transactionListing } from "./EmailTemplates/transactionListing.js";
 
 dotenv.config();
 
@@ -130,12 +131,35 @@ const invoiceReminderParams = {
   playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
 };
 
+const transactionListingParams = {
+  userName: "Ashish Rautela",
+  transactionTo: "01 Aug 2025",
+  transactionFrom: "15 Aug 2025",
+  twitterLink: "https://x.com/home",
+  linkedinLink: "https://www.linkedin.com/",
+  facebookLink: "https://www.facebook.com/",
+  helpcenterLink: "https://fdev.soleapp.com.au/",
+  privacyLink: "https://fdev.soleapp.com.au/",
+  termsLink: "https://fdev.soleapp.com.au/",
+  appStoreLink: "https://www.apple.com/in/app-store/",
+  playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+};
+
 const pdfBase64 = async () => {
   const response = await fetch(
     "https://morth.nic.in/sites/default/files/dd12-13_0.pdf"
   );
   const pdfBuffer = await response.arrayBuffer();
   const convertedBase64 = Buffer.from(pdfBuffer).toString("base64");
+  return convertedBase64;
+};
+
+const xlsxBase64 = async () => {
+  const response = await fetch(
+    "https://filesamples.com/samples/document/xlsx/sample1.xlsx"
+  );
+  const xlsxBuffer = await response.arrayBuffer();
+  const convertedBase64 = Buffer.from(xlsxBuffer).toString("base64");
   return convertedBase64;
 };
 
@@ -147,36 +171,42 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   subject: "Welcome to Sole",
     //   html: invitationEmail(inviteParams),
     // });
+
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
     //   to: adminEmail,
     //   subject: "Welcome to Sole",
     //   html: howToUse(howToUseParams),
     // });
+
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
     //   to: adminEmail,
     //   subject: "Welcome to Sole",
     //   html: trialOver(trialOverParams),
     // });
+
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
     //   to: adminEmail,
     //   subject: "Welcome to Sole",
     //   html: support(supportParams),
     // });
+
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
     //   to: adminEmail,
     //   subject: "Welcome to Sole",
     //   html: quotes(quoteParams),
     // });
+
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
     //   to: adminEmail,
     //   subject: "Welcome to Sole",
     //   html: verification(verificationParams),
     // });
+
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
     //   to: adminEmail,
@@ -184,16 +214,30 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   html: otp(otpParams),
     // });
 
-    const invoiceReminderBase64 = await pdfBase64();
+    // const invoiceReminderBase64 = await pdfBase64();
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: invoiceReminder(invoiceReminderParams),
+    //   attachments: [
+    //     {
+    //       filename: "INV-02.pdf",
+    //       content: invoiceReminderBase64,
+    //     },
+    //   ],
+    // });
+
+    const transListingBase64 = await xlsxBase64();
     await resend.emails.send({
       from: "PaidEarly <support@paidearly.in>",
       to: adminEmail,
       subject: "Welcome to Sole",
-      html: invoiceReminder(invoiceReminderParams),
+      html: transactionListing(transactionListingParams),
       attachments: [
         {
-          filename: "INV-02.pdf",
-          content: invoiceReminderBase64,
+          filename: "report.xlsx",
+          content: transListingBase64,
         },
       ],
     });

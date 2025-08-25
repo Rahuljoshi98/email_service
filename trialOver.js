@@ -1,6 +1,6 @@
-export const howToUse = ({
+export const trialOver = ({
   userName,
-  founderName,
+  trialEndDate,
   twitterLink,
   linkedinLink,
   facebookLink,
@@ -9,7 +9,8 @@ export const howToUse = ({
   termsLink,
   appStoreLink,
   playStoreLink,
-  knowledgeBaseLink,
+  bootcampLink,
+  supportHubLink,
 }) => `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -141,14 +142,27 @@ export const howToUse = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      How to use Sole & where to get help
+                                      Your trial is almost over
                                     </h1>
                                     <p
                                       style="
                                         color: #0a0d14;
                                         font-size: 14px;
                                         font-weight: 400;
-                                        margin-top: 16px;
+                                        margin-top: 14px;
+                                        margin-bottom: 0;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
+                                      "
+                                    >
+                                      Choose a plan to suit your business
+                                    </p>
+                                    <p
+                                      style="
+                                        color: #0a0d14;
+                                        font-size: 14px;
+                                        font-weight: 600;
+                                        margin-top: 14px;
                                         margin-bottom: 0;
                                         font-family: 'Plus Jakarta Sans', Arial,
                                           Helvetica, sans-serif;
@@ -167,427 +181,107 @@ export const howToUse = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      We understand that navigating an
-                                      accounting application (even as simple as
-                                      Sole), can sometimes bring up questions or
-                                      require additional support. We're here to
-                                      ensure that your experience with us is
-                                      smooth and efficient.
+                                      A friendly reminder that your free Sole
+                                      trial ends on ${trialEndDate}.
                                     </p>
-
-                                    <table
-                                      width="100%"
-                                      border="0"
-                                      cellpadding="0"
-                                      cellspacing="0"
-                                      role="presentation"
-                                      data-source-line="49"
+                                    <p
                                       style="
-                                        margin-top: 16px;
-                                        background-color: #f6f8fa;
-                                        border-radius: 12px;
-                                        padding: 6px;
+                                        color: #0a0d14;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-top: 12px;
+                                        margin-bottom: 0;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
                                       "
                                     >
-                                      <tbody>
-                                        <tr>
-                                          <td>
-                                            <p
-                                              style="
-                                                color: #0a0d14;
-                                                font-size: 16px;
-                                                font-weight: 550;
-                                                margin: 0;
-                                                padding-left: 6px;
-                                                padding-top: 4px;
-                                                font-family: 'Plus Jakarta Sans',
-                                                  Arial, Helvetica, sans-serif;
-                                              "
-                                            >
-                                              Here are the steps to talk to our
-                                              Aussie support team:
-                                            </p>
+                                      To help get you started (if you haven’t
+                                      made it that far yet!) check out the 10
+                                      minute bootcamp to get going fast, or
+                                      visit our dedicated Aussie Support Hub for
+                                      user guides or help on how to use Sole.
+                                    </p>
 
-                                            <div
-                                              style="
-                                                background-color: white;
-                                                border-radius: 12px;
-                                                margin-top: 12px;
-                                              "
-                                            >
-                                              <table
-                                                role="presentation"
-                                                cellspacing="0"
-                                                cellpadding="0"
-                                                border="0"
-                                                width="100%"
-                                                style="
-                                                  margin: 0;
-                                                  padding: 12px 16px;
-                                                  border-bottom: 1px solid
-                                                    #e2e4e9;
-                                                "
-                                              >
-                                                <tr>
-                                                  <td
-                                                    valign="middle"
-                                                    style="
-                                                      width: 25px;
-                                                      height: 25px;
-                                                      line-height: 0;
-                                                    "
-                                                  >
-                                                    <div
-                                                      style="
-                                                        width: 25px;
-                                                        height: 25px;
-                                                        border-radius: 50%;
-                                                        background-color: #ffffff;
-                                                        border: 1px solid
-                                                          #1516231f;
-                                                        display: inline-block;
-                                                      "
-                                                    >
-                                                      <table
-                                                        role="presentation"
-                                                        cellspacing="0"
-                                                        cellpadding="0"
-                                                        border="0"
-                                                        width="100%"
-                                                        height="100%"
-                                                      >
-                                                        <tr>
-                                                          <td
-                                                            align="center"
-                                                            valign="middle"
-                                                          >
-                                                            <img
-                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
-                                                              alt="icon"
-                                                              width="16"
-                                                              height="16"
-                                                              style="
-                                                                display: block;
-                                                              "
-                                                            />
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                    </div>
-                                                  </td>
+                                    <p
+                                      style="
+                                        color: #0a0d14;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-top: 12px;
+                                        margin-bottom: 0;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
+                                      "
+                                    >
+                                      You will need to create a username and
+                                      password to access the Support Hub. This
+                                      will ensure that you have full visibility
+                                      of the status.
+                                    </p>
 
-                                                  <td
-                                                    valign="middle"
-                                                    style="
-                                                      padding-left: 12px;
-                                                      font-family: 'Plus Jakarta Sans',
-                                                        Arial, Helvetica,
-                                                        sans-serif;
-                                                      font-size: 13px;
-                                                      color: #0a0d14;
-                                                      font-weight: 400;
-                                                    "
-                                                  >
-                                                    1. Navigate to
-                                                    <a
-                                                      href="${knowledgeBaseLink}"
-                                                      data-source-line="71"
-                                                      style="
-                                                        color: #375dfb;
-                                                        text-decoration-line: underline;
-                                                      "
-                                                      target="_blank"
-                                                      >our knowledge base
-                                                    </a>
-                                                  </td>
-                                                </tr>
-                                              </table>
+                                    <!-- btns -->
+                                    <table
+                                      role="presentation"
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      border="0"
+                                      style="margin-top: 18px"
+                                    >
+                                      <tr>
+                                        <!-- 10 min bootcamp -->
+                                        <td
+                                          align="center"
+                                          style="border-radius: 0px"
+                                        >
+                                          <a
+                                            href="${bootcampLink}"
+                                            style="
+                                              display: inline-block;
+                                              font-family: 'Plus Jakarta Sans',
+                                                Arial, Helvetica, sans-serif;
+                                              font-size: 14px;
+                                              font-weight: 500;
+                                              color: #ffffff;
+                                              text-decoration: none;
+                                              padding: 10px 20px;
+                                              border-radius: 8px;
+                                              background-color: #007bff;
+                                            "
+                                          >
+                                            10 Minute Bootcamp
+                                          </a>
+                                        </td>
 
-                                              <table
-                                                role="presentation"
-                                                cellspacing="0"
-                                                cellpadding="0"
-                                                border="0"
-                                                width="100%"
-                                                style="
-                                                  margin: 0;
-                                                  padding: 12px 16px;
-                                                  border-bottom: 1px solid
-                                                    #e2e4e9;
-                                                "
-                                              >
-                                                <tr>
-                                                  <td
-                                                    valign="middle"
-                                                    style="
-                                                      width: 25px;
-                                                      height: 25px;
-                                                      line-height: 0;
-                                                    "
-                                                  >
-                                                    <div
-                                                      style="
-                                                        width: 25px;
-                                                        height: 25px;
-                                                        border-radius: 50%;
-                                                        background-color: #ffffff;
-                                                        border: 1px solid
-                                                          #1516231f;
-                                                        display: inline-block;
-                                                      "
-                                                    >
-                                                      <table
-                                                        role="presentation"
-                                                        cellspacing="0"
-                                                        cellpadding="0"
-                                                        border="0"
-                                                        width="100%"
-                                                        height="100%"
-                                                      >
-                                                        <tr>
-                                                          <td
-                                                            align="center"
-                                                            valign="middle"
-                                                          >
-                                                            <img
-                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/like-shapes.svg"
-                                                              alt="icon"
-                                                              width="18"
-                                                              height="18"
-                                                              style="
-                                                                display: block;
-                                                              "
-                                                            />
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                    </div>
-                                                  </td>
+                                        <!-- Space between buttons -->
+                                        <td width="12">&nbsp;</td>
 
-                                                  <td
-                                                    valign="middle"
-                                                    style="
-                                                      padding-left: 12px;
-                                                      font-family: 'Plus Jakarta Sans',
-                                                        Arial, Helvetica,
-                                                        sans-serif;
-                                                      font-size: 13px;
-                                                      color: #0a0d14;
-                                                      font-weight: 400;
-                                                    "
-                                                  >
-                                                    2. Create a support account
-                                                    (you will need a new support
-                                                    username and password).
-                                                  </td>
-                                                </tr>
-                                              </table>
-
-                                              <table
-                                                role="presentation"
-                                                cellspacing="0"
-                                                cellpadding="0"
-                                                border="0"
-                                                width="100%"
-                                                style="
-                                                  margin: 0;
-                                                  padding: 12px 16px;
-                                                  border-bottom: 1px solid
-                                                    #e2e4e9;
-                                                "
-                                              >
-                                                <tr>
-                                                  <td
-                                                    valign="middle"
-                                                    style="
-                                                      width: 25px;
-                                                      height: 25px;
-                                                      line-height: 0;
-                                                    "
-                                                  >
-                                                    <div
-                                                      style="
-                                                        width: 25px;
-                                                        height: 25px;
-                                                        border-radius: 50%;
-                                                        background-color: #ffffff;
-                                                        border: 1px solid
-                                                          #1516231f;
-                                                        display: inline-block;
-                                                      "
-                                                    >
-                                                      <table
-                                                        role="presentation"
-                                                        cellspacing="0"
-                                                        cellpadding="0"
-                                                        border="0"
-                                                        width="100%"
-                                                        height="100%"
-                                                      >
-                                                        <tr>
-                                                          <td
-                                                            align="center"
-                                                            valign="middle"
-                                                          >
-                                                            <img
-                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/message-question.svg"
-                                                              alt="icon"
-                                                              width="17"
-                                                              height="17"
-                                                              style="
-                                                                display: block;
-                                                              "
-                                                            />
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                    </div>
-                                                  </td>
-
-                                                  <td
-                                                    valign="middle"
-                                                    style="
-                                                      padding-left: 12px;
-                                                      font-family: 'Plus Jakarta Sans',
-                                                        Arial, Helvetica,
-                                                        sans-serif;
-                                                      font-size: 13px;
-                                                      color: #0a0d14;
-                                                      font-weight: 400;
-                                                    "
-                                                  >
-                                                    3. Explore our online
-                                                    knowledge base, filled with
-                                                    articles, FAQs, and
-                                                    troubleshooting guide
-                                                  </td>
-                                                </tr>
-                                              </table>
-
-                                              <table
-                                                role="presentation"
-                                                cellspacing="0"
-                                                cellpadding="0"
-                                                border="0"
-                                                width="100%"
-                                                style="
-                                                  margin: 0;
-                                                  padding: 12px 16px;
-                                                "
-                                              >
-                                                <tr>
-                                                  <td
-                                                    valign="middle"
-                                                    style="
-                                                      width: 25px;
-                                                      height: 25px;
-                                                      line-height: 0;
-                                                    "
-                                                  >
-                                                    <div
-                                                      style="
-                                                        width: 25px;
-                                                        height: 25px;
-                                                        border-radius: 50%;
-                                                        background-color: #ffffff;
-                                                        border: 1px solid
-                                                          #1516231f;
-                                                        display: inline-block;
-                                                      "
-                                                    >
-                                                      <table
-                                                        role="presentation"
-                                                        cellspacing="0"
-                                                        cellpadding="0"
-                                                        border="0"
-                                                        width="100%"
-                                                        height="100%"
-                                                      >
-                                                        <tr>
-                                                          <td
-                                                            align="center"
-                                                            valign="middle"
-                                                          >
-                                                            <img
-                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/medal-star.svg"
-                                                              alt="icon"
-                                                              width="17"
-                                                              height="17"
-                                                              style="
-                                                                display: block;
-                                                              "
-                                                            />
-                                                          </td>
-                                                        </tr>
-                                                      </table>
-                                                    </div>
-                                                  </td>
-
-                                                  <td
-                                                    valign="middle"
-                                                    style="
-                                                      padding-left: 12px;
-                                                      font-family: 'Plus Jakarta Sans',
-                                                        Arial, Helvetica,
-                                                        sans-serif;
-                                                      font-size: 13px;
-                                                      color: #0a0d14;
-                                                      font-weight: 400;
-                                                    "
-                                                  >
-                                                    4. If you can't find the
-                                                    answer you're looking for,
-                                                    our Aussie support team is
-                                                    available directly through
-                                                    the knowledge base. Drop us
-                                                    a message, and we'll get
-                                                    back to you as soon as
-                                                    possible
-                                                  </td>
-                                                </tr>
-                                              </table>
-                                            </div>
-                                          </td>
-                                        </tr>
-                                      </tbody>
+                                        <!-- Outline Button -->
+                                        <td
+                                          align="center"
+                                          style="
+                                            border-radius: 8px;
+                                            border: 1px solid #4d4dff;
+                                          "
+                                        >
+                                          <a
+                                            href="${supportHubLink}"
+                                            style="
+                                              display: inline-block;
+                                              font-family: 'Plus Jakarta Sans',
+                                                Arial, Helvetica, sans-serif;
+                                              font-size: 14px;
+                                              font-weight: 500;
+                                              color: #4f46e5;
+                                              text-decoration: none;
+                                              padding: 10px 20px;
+                                              border-radius: 8px;
+                                            "
+                                          >
+                                            Support Hub
+                                          </a>
+                                        </td>
+                                      </tr>
                                     </table>
-
-                                    <div>
-                                      <p
-                                        style="
-                                          color: #0a0d14;
-                                          font-size: 14px;
-                                          font-weight: 400;
-                                          margin-top: 18px;
-                                          margin-bottom: 0;
-                                          font-family: 'Plus Jakarta Sans',
-                                            Arial, Helvetica, sans-serif;
-                                        "
-                                      >
-                                        If you are looking for a refresher on
-                                        how to use Sole, a dedicated 10- minute
-                                        (video and text) bootcamp has also been
-                                        set up to help you navigate through
-                                        Sole.
-                                      </p>
-                                    </div>
-
-                                    <div>
-                                      <p
-                                        style="
-                                          color: #0a0d14;
-                                          font-size: 14px;
-                                          font-weight: 400;
-                                          margin-top: 18px;
-                                          margin-bottom: 0;
-                                          font-family: 'Plus Jakarta Sans',
-                                            Arial, Helvetica, sans-serif;
-                                        "
-                                      >
-                                        Thank you for choosing Sole. We're here
-                                        to support you every step of the way
-                                      </p>
-                                    </div>
 
                                     <!-- best regards -->
                                     <div>
@@ -602,7 +296,7 @@ export const howToUse = ({
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
-                                        Warm Regards
+                                        Best Regards
                                       </p>
 
                                       <p
@@ -616,11 +310,11 @@ export const howToUse = ({
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
-                                        ${founderName} - Founder
+                                        Sole App Team
                                       </p>
                                     </div>
 
-                                    <!-- download -->
+                                    <!-- downloads -->
                                     <table
                                       role="presentation"
                                       cellspacing="0"

@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import { adminEmailTemplate } from "./adminEmailTemplate.js";
 import { invitationEmail } from "./invitationEmail.js";
 import { howToUse } from "./howToUse.js";
+import { trialOver } from "./trialOver.js";
 
 dotenv.config();
 
@@ -36,17 +37,38 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
       playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
       knowledgeBaseLink: "https://fdev.soleapp.com.au/",
     };
-    await resend.emails.send({
-      from: "PaidEarly <support@paidearly.in>",
-      to: adminEmail,
-      subject: "Welcome to Sole",
-      html: invitationEmail(inviteParams),
-    });
+
+    const trialOverParams = {
+      userName: "Rahul Joshi",
+      trialEndDate: "25/08/2025",
+      twitterLink: "https://x.com/home",
+      linkedinLink: "https://www.linkedin.com/",
+      facebookLink: "https://www.facebook.com/",
+      helpcenterLink: "https://fdev.soleapp.com.au/",
+      privacyLink: "https://fdev.soleapp.com.au/",
+      termsLink: "https://fdev.soleapp.com.au/",
+      appStoreLink: "https://www.apple.com/in/app-store/",
+      playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+      bootcampLink: "https://fdev.soleapp.com.au/",
+      supportHubLink: "https://fdev.soleapp.com.au/",
+    };
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: invitationEmail(inviteParams),
+    // });
     await resend.emails.send({
       from: "PaidEarly <support@paidearly.in>",
       to: adminEmail,
       subject: "Welcome to Sole",
       html: howToUse(howToUseParams),
+    });
+    await resend.emails.send({
+      from: "PaidEarly <support@paidearly.in>",
+      to: adminEmail,
+      subject: "Welcome to Sole",
+      html: trialOver(trialOverParams),
     });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {

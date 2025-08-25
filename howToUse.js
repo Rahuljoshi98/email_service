@@ -247,7 +247,33 @@ export const howToUse = ({
                                                           #1516231f;
                                                         display: inline-block;
                                                       "
-                                                    ></div>
+                                                    >
+                                                      <table
+                                                        role="presentation"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        border="0"
+                                                        width="100%"
+                                                        height="100%"
+                                                      >
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            valign="middle"
+                                                          >
+                                                            <img
+                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
+                                                              alt="icon"
+                                                              width="16"
+                                                              height="16"
+                                                              style="
+                                                                display: block;
+                                                              "
+                                                            />
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
                                                   </td>
 
                                                   <td
@@ -262,7 +288,7 @@ export const howToUse = ({
                                                       font-weight: 400;
                                                     "
                                                   >
-                                                    1. Navigate to 
+                                                    1. Navigate to
                                                     <a
                                                       href="${knowledgeBaseLink}"
                                                       data-source-line="71"
@@ -309,7 +335,33 @@ export const howToUse = ({
                                                           #1516231f;
                                                         display: inline-block;
                                                       "
-                                                    ></div>
+                                                    >
+                                                      <table
+                                                        role="presentation"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        border="0"
+                                                        width="100%"
+                                                        height="100%"
+                                                      >
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            valign="middle"
+                                                          >
+                                                            <img
+                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/like-shapes.svg"
+                                                              alt="icon"
+                                                              width="18"
+                                                              height="18"
+                                                              style="
+                                                                display: block;
+                                                              "
+                                                            />
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
                                                   </td>
 
                                                   <td
@@ -363,7 +415,33 @@ export const howToUse = ({
                                                           #1516231f;
                                                         display: inline-block;
                                                       "
-                                                    ></div>
+                                                    >
+                                                      <table
+                                                        role="presentation"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        border="0"
+                                                        width="100%"
+                                                        height="100%"
+                                                      >
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            valign="middle"
+                                                          >
+                                                            <img
+                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/message-question.svg"
+                                                              alt="icon"
+                                                              width="17"
+                                                              height="17"
+                                                              style="
+                                                                display: block;
+                                                              "
+                                                            />
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
                                                   </td>
 
                                                   <td
@@ -416,7 +494,33 @@ export const howToUse = ({
                                                           #1516231f;
                                                         display: inline-block;
                                                       "
-                                                    ></div>
+                                                    >
+                                                      <table
+                                                        role="presentation"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        border="0"
+                                                        width="100%"
+                                                        height="100%"
+                                                      >
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            valign="middle"
+                                                          >
+                                                            <img
+                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/medal-star.svg"
+                                                              alt="icon"
+                                                              width="17"
+                                                              height="17"
+                                                              style="
+                                                                display: block;
+                                                              "
+                                                            />
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
                                                   </td>
 
                                                   <td
@@ -604,7 +708,7 @@ export const howToUse = ({
                                                         target="_blank"
                                                       >
                                                         <img
-                                                          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                                          src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Mobile+app+store+badge.svg"
                                                           width="100"
                                                           alt="Download on the App Store"
                                                           style="
@@ -622,7 +726,7 @@ export const howToUse = ({
                                                         target="_blank"
                                                       >
                                                         <img
-                                                          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                                                          src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Mobile+app+store+badge+(1).svg"
                                                           width="100"
                                                           alt="Get it on Google Play"
                                                           style="
@@ -664,7 +768,7 @@ export const howToUse = ({
                               cellpadding="0"
                               cellspacing="0"
                               role="presentation"
-                              style="padding: 20px 0"
+                              style="padding: 6px 0"
                             >
                               <tbody>
                                 <tr>
@@ -672,7 +776,7 @@ export const howToUse = ({
                                     <img
                                       alt="Sole's Logo"
                                       height="45"
-                                      src="https://soleapp.s3.ap-southeast-2.amazonaws.com/invoice-uploads/0127d605-f102-4690-9e2a-2523ebd66621-Group.svg"
+                                      src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Group.svg"
                                       width="75"
                                       style="
                                         display: block;
@@ -693,7 +797,7 @@ export const howToUse = ({
                                   color: #0a0d14;
                                   font-size: 14px;
                                   font-weight: 400;
-                                  margin-top: 18px;
+                                  margin-top: 6px;
                                   margin-bottom: 0;
                                   padding: 0 12px;
                                   font-family: 'Plus Jakarta Sans', Arial,
@@ -724,8 +828,8 @@ export const howToUse = ({
                                     cellpadding="0"
                                     cellspacing="0"
                                     style="
-                                      width: 35px;
-                                      height: 35px;
+                                      width: 30px;
+                                      height: 30px;
                                       border-radius: 8px;
                                       background-color: #ffffff;
                                       border: 1px solid #1516231f;
@@ -738,15 +842,23 @@ export const howToUse = ({
                                           target="_blank"
                                           style="
                                             display: block;
-                                            font-size: 16px;
-                                            font-weight: 600;
-                                            font-family: 'Plus Jakarta Sans',
-                                              Arial, Helvetica, sans-serif;
-                                            color: #375dfb;
                                             text-decoration: none;
                                           "
-                                          >T</a
                                         >
+                                          <img
+                                            alt="Sole's Logo"
+                                            height="17"
+                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon.svg"
+                                            width="17"
+                                            style="
+                                              display: block;
+                                              margin: 0 auto;
+                                              outline: none;
+                                              border: none;
+                                              text-decoration: none;
+                                            "
+                                          />
+                                        </a>
                                       </td>
                                     </tr>
                                   </table>
@@ -760,8 +872,8 @@ export const howToUse = ({
                                     cellpadding="0"
                                     cellspacing="0"
                                     style="
-                                      width: 35px;
-                                      height: 35px;
+                                      width: 30px;
+                                      height: 30px;
                                       border-radius: 8px;
                                       background-color: #ffffff;
                                       border: 1px solid #1516231f;
@@ -774,15 +886,23 @@ export const howToUse = ({
                                           target="_blank"
                                           style="
                                             display: block;
-                                            font-size: 16px;
-                                            font-weight: 600;
-                                            font-family: 'Plus Jakarta Sans',
-                                              Arial, Helvetica, sans-serif;
-                                            color: #375dfb;
                                             text-decoration: none;
                                           "
-                                          >L</a
                                         >
+                                          <img
+                                            alt="Sole's Logo"
+                                            height="20"
+                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon+(1).svg"
+                                            width="20"
+                                            style="
+                                              display: block;
+                                              margin: 0 auto;
+                                              outline: none;
+                                              border: none;
+                                              text-decoration: none;
+                                            "
+                                          />
+                                        </a>
                                       </td>
                                     </tr>
                                   </table>
@@ -796,8 +916,8 @@ export const howToUse = ({
                                     cellpadding="0"
                                     cellspacing="0"
                                     style="
-                                      width: 35px;
-                                      height: 35px;
+                                      width: 30px;
+                                      height: 30px;
                                       border-radius: 8px;
                                       background-color: #ffffff;
                                       border: 1px solid #1516231f;
@@ -810,15 +930,23 @@ export const howToUse = ({
                                           target="_blank"
                                           style="
                                             display: block;
-                                            font-size: 16px;
-                                            font-weight: 600;
-                                            font-family: 'Plus Jakarta Sans',
-                                              Arial, Helvetica, sans-serif;
-                                            color: #375dfb;
                                             text-decoration: none;
                                           "
-                                          >F</a
                                         >
+                                          <img
+                                            alt="Sole's Logo"
+                                            height="20"
+                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon+(2).svg"
+                                            width="20"
+                                            style="
+                                              display: block;
+                                              margin: 0 auto;
+                                              outline: none;
+                                              border: none;
+                                              text-decoration: none;
+                                            "
+                                          />
+                                        </a>
                                       </td>
                                     </tr>
                                   </table>

@@ -472,7 +472,7 @@ export const invitationEmail = ({
                                               color: #ffffff;
                                               text-decoration: none;
                                               border-radius: 8px;
-                                              background-color: #007bff;
+                                              background-color: #4D4DFF;
                                             "
                                           >
                                             Sign Up Now

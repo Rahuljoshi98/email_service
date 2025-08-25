@@ -248,7 +248,7 @@ export const trialOver = ({
                                               text-decoration: none;
                                               padding: 10px 20px;
                                               border-radius: 8px;
-                                              background-color: #007bff;
+                                              background-color: #4D4DFF;
                                             "
                                           >
                                             10 Minute Bootcamp

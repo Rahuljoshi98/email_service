@@ -1,7 +1,6 @@
-export const support = ({
+export const verification = ({
   userName,
-  supportEmail,
-  supportEndDate,
+  verifyAccountLink,
   twitterLink,
   linkedinLink,
   facebookLink,
@@ -10,8 +9,6 @@ export const support = ({
   termsLink,
   appStoreLink,
   playStoreLink,
-  loginLink,
-  regardsBy,
 }) => `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -143,7 +140,7 @@ export const support = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      Sole Support Access
+                                      Verify Your Sole Account
                                     </h1>
                                     <p
                                       style="
@@ -169,25 +166,9 @@ export const support = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      ${supportEmail} has shared Sole Support
-                                      Access.
-                                    </p>
-
-                                    <p
-                                      style="
-                                        color: #0a0d14;
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                        margin-top: 12px;
-                                        margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
-                                      "
-                                    >
-                                      End Date of Access: 
-                                      <span style="font-weight: 600">
-                                        ${supportEndDate}
-                                      </span>
+                                      Welcome aboard! To keep your account
+                                      secure and get you started, please verify
+                                      your email address
                                     </p>
 
                                     <!-- btns -->
@@ -199,13 +180,13 @@ export const support = ({
                                       style="margin-top: 18px"
                                     >
                                       <tr>
-                                        <!-- Login -->
+                                        <!-- verify_acc -->
                                         <td
                                           align="center"
                                           style="border-radius: 0px"
                                         >
                                           <a
-                                            href="${loginLink}"
+                                            href="${verifyAccountLink}"
                                             style="
                                               display: inline-block;
                                               font-family: 'Plus Jakarta Sans',
@@ -219,11 +200,26 @@ export const support = ({
                                               background-color: #4D4DFF;
                                             "
                                           >
-                                            Login
+                                            Verify My Account
                                           </a>
                                         </td>
                                       </tr>
                                     </table>
+
+                                    <p
+                                      style="
+                                        color: #0a0d14;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-top: 18px;
+                                        margin-bottom: 0;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
+                                      "
+                                    >
+                                      If you didn’t sign up for Sole, you can
+                                      safely ignore this email.
+                                    </p>
 
                                     <!-- best regards -->
                                     <div>
@@ -252,7 +248,7 @@ export const support = ({
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
-                                        ${regardsBy}
+                                        The Sole Team
                                       </p>
                                     </div>
 

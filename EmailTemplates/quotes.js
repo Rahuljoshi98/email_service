@@ -224,7 +224,7 @@ export const quotes = ({
                                       "
                                     >
                                       <tr>
-                                        <td align="center" style="padding: 8px">
+                                        <td align="center">
                                           <!-- Outer container -->
                                           <table
                                             role="presentation"

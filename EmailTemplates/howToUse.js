@@ -1,6 +1,6 @@
 export const howToUse = ({
   userName,
-  founderName,
+  regardsBy,
   twitterLink,
   linkedinLink,
   facebookLink,
@@ -147,7 +147,7 @@ export const howToUse = ({
                                       style="
                                         color: #0a0d14;
                                         font-size: 14px;
-                                        font-weight: 400;
+                                        font-weight: 600;
                                         margin-top: 16px;
                                         margin-bottom: 0;
                                         font-family: 'Plus Jakarta Sans', Arial,
@@ -616,7 +616,7 @@ export const howToUse = ({
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
-                                        ${founderName} - Founder
+                                        ${regardsBy} - Founder
                                       </p>
                                     </div>
 

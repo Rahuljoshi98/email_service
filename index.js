@@ -27,7 +27,7 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
 
     const howToUseParams = {
       userName: "Rahul Joshi",
-      founderName: "Johann Oberholzer",
+      regardsBy: "Johann Oberholzer",
       twitterLink: "https://x.com/home",
       linkedinLink: "https://www.linkedin.com/",
       facebookLink: "https://www.facebook.com/",
@@ -107,12 +107,12 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   subject: "Welcome to Sole",
     //   html: support(supportParams),
     // });
-    // await resend.emails.send({
-    //   from: "PaidEarly <support@paidearly.in>",
-    //   to: adminEmail,
-    //   subject: "Welcome to Sole",
-    //   html: quotes(quoteParams),
-    // });
+    await resend.emails.send({
+      from: "PaidEarly <support@paidearly.in>",
+      to: adminEmail,
+      subject: "Welcome to Sole",
+      html: quotes(quoteParams),
+    });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {
     console.error(`Error sending email to ${adminEmail}:`, error);

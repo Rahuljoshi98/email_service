@@ -184,7 +184,10 @@ export const support = ({
                                           Helvetica, sans-serif;
                                       "
                                     >
-                                      End Date of Access: ${supportEndDate}
+                                      End Date of Access: 
+                                      <span style="font-weight: 600">
+                                        ${supportEndDate}
+                                      </span>
                                     </p>
 
                                     <!-- btns -->

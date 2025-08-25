@@ -1,8 +1,8 @@
 import { Resend } from "resend";
 import dotenv from "dotenv";
-import { invitationEmail } from "./invitationEmail.js";
-import { howToUse } from "./howToUse.js";
-import { trialOver } from "./trialOver.js";
+import { invitationEmail } from "./EmailTemplates/invitationEmail.js";
+import { howToUse } from "./EmailTemplates/howToUse.js";
+import { trialOver } from "./EmailTemplates/trialOver.js";
 
 dotenv.config();
 
@@ -51,12 +51,12 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
       bootcampLink: "https://fdev.soleapp.com.au/",
       supportHubLink: "https://fdev.soleapp.com.au/",
     };
-    // await resend.emails.send({
-    //   from: "PaidEarly <support@paidearly.in>",
-    //   to: adminEmail,
-    //   subject: "Welcome to Sole",
-    //   html: invitationEmail(inviteParams),
-    // });
+    await resend.emails.send({
+      from: "PaidEarly <support@paidearly.in>",
+      to: adminEmail,
+      subject: "Welcome to Sole",
+      html: invitationEmail(inviteParams),
+    });
     await resend.emails.send({
       from: "PaidEarly <support@paidearly.in>",
       to: adminEmail,

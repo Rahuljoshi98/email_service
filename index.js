@@ -1,6 +1,5 @@
 import { Resend } from "resend";
 import dotenv from "dotenv";
-import { adminEmailTemplate } from "./adminEmailTemplate.js";
 import { invitationEmail } from "./invitationEmail.js";
 import { howToUse } from "./howToUse.js";
 import { trialOver } from "./trialOver.js";

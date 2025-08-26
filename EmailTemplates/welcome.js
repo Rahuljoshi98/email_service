@@ -83,15 +83,14 @@ export const welcome = ({
                                   <td align="left" valign="middle">
                                     <img
                                       alt="Sole's Logo"
-                                      height="45"
-                                      src="https://soleapp.s3.ap-southeast-2.amazonaws.com/invoice-uploads/0127d605-f102-4690-9e2a-2523ebd66621-Group.svg"
+                                      src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/logo-white.png"
                                       style="
                                         display: block;
                                         outline: none;
                                         border: none;
                                         text-decoration: none;
+                                        width: auto;
                                       "
-                                      width="75"
                                     />
                                   </td>
 
@@ -188,7 +187,7 @@ export const welcome = ({
                                       "
                                     >
                                       <img
-                                        src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/WhatsApp+Image+2025-08-26+at+12.14.29+PM.jpeg"
+                                        src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/thumbnail.png"
                                         alt="thumbnail"
                                         width="100%"
                                         height="auto"
@@ -281,10 +280,10 @@ export const welcome = ({
                                                             valign="middle"
                                                           >
                                                             <img
-                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
+                                                              src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/personalcard.png"
                                                               alt="icon"
-                                                              width="16"
-                                                              height="16"
+                                                              width="22"
+                                                              height="22"
                                                               style="
                                                                 display: block;
                                                               "
@@ -444,10 +443,10 @@ export const welcome = ({
                                                             valign="middle"
                                                           >
                                                             <img
-                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
+                                                              src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/bank.png"
                                                               alt="icon"
-                                                              width="16"
-                                                              height="16"
+                                                              width="18"
+                                                              height="18"
                                                               style="
                                                                 display: block;
                                                               "
@@ -613,10 +612,10 @@ export const welcome = ({
                                                             valign="middle"
                                                           >
                                                             <img
-                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
+                                                              src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/monitor-mobbile.png"
                                                               alt="icon"
-                                                              width="16"
-                                                              height="16"
+                                                              width="20"
+                                                              height="20"
                                                               style="
                                                                 display: block;
                                                               "
@@ -827,15 +826,14 @@ export const welcome = ({
                                   <td align="center" style="text-align: center">
                                     <img
                                       alt="Sole's Logo"
-                                      height="45"
-                                      src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Group.svg"
-                                      width="75"
+                                      src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/logo-black.png"
                                       style="
                                         display: block;
                                         margin: 0 auto;
                                         outline: none;
                                         border: none;
                                         text-decoration: none;
+                                        width: auto;
                                       "
                                     />
                                   </td>
@@ -898,9 +896,9 @@ export const welcome = ({
                                           "
                                         >
                                           <img
-                                            alt="Sole's Logo"
+                                            alt="Twitter"
                                             height="17"
-                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon.svg"
+                                            src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/twitter.png"
                                             width="17"
                                             style="
                                               display: block;
@@ -942,9 +940,9 @@ export const welcome = ({
                                           "
                                         >
                                           <img
-                                            alt="Sole's Logo"
+                                            alt="linkedin"
                                             height="20"
-                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon+(1).svg"
+                                            src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/linkedin.png"
                                             width="20"
                                             style="
                                               display: block;
@@ -986,9 +984,9 @@ export const welcome = ({
                                           "
                                         >
                                           <img
-                                            alt="Sole's Logo"
+                                            alt="facebook"
                                             height="20"
-                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon+(2).svg"
+                                            src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/facebook.png"
                                             width="20"
                                             style="
                                               display: block;

@@ -47,12 +47,12 @@ export const invitationEmail = ({
                 border-radius: 12px;
                 overflow: hidden;
                 box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
-                padding: 12px
+                padding: 12px;
               "
             >
               <tbody>
-                <tr style="width: 100%; border-radius: 12px;">
-                  <td style="border-radius: 12px; overflow: hidden;">
+                <tr style="width: 100%; border-radius: 12px">
+                  <td style="border-radius: 12px; overflow: hidden">
                     <table
                       align="center"
                       width="100%"
@@ -258,7 +258,33 @@ export const invitationEmail = ({
                                                           #1516231f;
                                                         display: inline-block;
                                                       "
-                                                    ></div>
+                                                    >
+                                                      <table
+                                                        role="presentation"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        border="0"
+                                                        width="100%"
+                                                        height="100%"
+                                                      >
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            valign="middle"
+                                                          >
+                                                            <img
+                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
+                                                              alt="icon"
+                                                              width="16"
+                                                              height="16"
+                                                              style="
+                                                                display: block;
+                                                              "
+                                                            />
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
                                                   </td>
 
                                                   <td
@@ -276,7 +302,7 @@ export const invitationEmail = ({
                                                     Access and manage user’s
                                                     financial data and
                                                     accounting records
-                                                    seamlessly
+                                                    seamlessly.
                                                   </td>
                                                 </tr>
                                               </table>
@@ -313,7 +339,33 @@ export const invitationEmail = ({
                                                           #1516231f;
                                                         display: inline-block;
                                                       "
-                                                    ></div>
+                                                    >
+                                                      <table
+                                                        role="presentation"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        border="0"
+                                                        width="100%"
+                                                        height="100%"
+                                                      >
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            valign="middle"
+                                                          >
+                                                            <img
+                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
+                                                              alt="icon"
+                                                              width="16"
+                                                              height="16"
+                                                              style="
+                                                                display: block;
+                                                              "
+                                                            />
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
                                                   </td>
 
                                                   <td
@@ -366,7 +418,33 @@ export const invitationEmail = ({
                                                           #1516231f;
                                                         display: inline-block;
                                                       "
-                                                    ></div>
+                                                    >
+                                                      <table
+                                                        role="presentation"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        border="0"
+                                                        width="100%"
+                                                        height="100%"
+                                                      >
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            valign="middle"
+                                                          >
+                                                            <img
+                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
+                                                              alt="icon"
+                                                              width="16"
+                                                              height="16"
+                                                              style="
+                                                                display: block;
+                                                              "
+                                                            />
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
                                                   </td>
 
                                                   <td
@@ -396,6 +474,8 @@ export const invitationEmail = ({
                                                 style="
                                                   margin: 0;
                                                   padding: 12px 16px;
+                                                  border-bottom: 1px solid
+                                                    #e2e4e9;
                                                 "
                                               >
                                                 <tr>
@@ -417,7 +497,33 @@ export const invitationEmail = ({
                                                           #1516231f;
                                                         display: inline-block;
                                                       "
-                                                    ></div>
+                                                    >
+                                                      <table
+                                                        role="presentation"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        border="0"
+                                                        width="100%"
+                                                        height="100%"
+                                                      >
+                                                        <tr>
+                                                          <td
+                                                            align="center"
+                                                            valign="middle"
+                                                          >
+                                                            <img
+                                                              src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/book.svg"
+                                                              alt="icon"
+                                                              width="16"
+                                                              height="16"
+                                                              style="
+                                                                display: block;
+                                                              "
+                                                            />
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </div>
                                                   </td>
 
                                                   <td
@@ -472,7 +578,7 @@ export const invitationEmail = ({
                                               color: #ffffff;
                                               text-decoration: none;
                                               border-radius: 8px;
-                                              background-color: #4D4DFF;
+                                              background-color: #4d4dff;
                                             "
                                           >
                                             Sign Up Now
@@ -576,7 +682,7 @@ export const invitationEmail = ({
                               cellpadding="0"
                               cellspacing="0"
                               role="presentation"
-                              style="padding: 20px 0"
+                              style="padding: 6px 0"
                             >
                               <tbody>
                                 <tr>
@@ -584,7 +690,7 @@ export const invitationEmail = ({
                                     <img
                                       alt="Sole's Logo"
                                       height="45"
-                                      src="https://soleapp.s3.ap-southeast-2.amazonaws.com/invoice-uploads/0127d605-f102-4690-9e2a-2523ebd66621-Group.svg"
+                                      src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Group.svg"
                                       width="75"
                                       style="
                                         display: block;
@@ -605,7 +711,7 @@ export const invitationEmail = ({
                                   color: #0a0d14;
                                   font-size: 14px;
                                   font-weight: 400;
-                                  margin-top: 18px;
+                                  margin-top: 6px;
                                   margin-bottom: 0;
                                   padding: 0 12px;
                                   font-family: 'Plus Jakarta Sans', Arial,
@@ -620,121 +726,147 @@ export const invitationEmail = ({
 
                             <!-- Social Icons -->
                             <table
-                            role="presentation"
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                            align="center"
-                            style="margin: 20px auto"
+                              role="presentation"
+                              border="0"
+                              cellpadding="0"
+                              cellspacing="0"
+                              align="center"
+                              style="margin: 20px auto"
                             >
-                            <tr>
+                              <tr>
                                 <!-- Twitter -->
                                 <td align="center" style="padding: 0 8px">
-                                <table
+                                  <table
                                     role="presentation"
                                     border="0"
                                     cellpadding="0"
                                     cellspacing="0"
                                     style="
-                                    width: 35px;
-                                    height: 35px;
-                                    border-radius: 8px;
-                                    background-color: #ffffff;
-                                    border: 1px solid #1516231f;
+                                      width: 30px;
+                                      height: 30px;
+                                      border-radius: 8px;
+                                      background-color: #ffffff;
+                                      border: 1px solid #1516231f;
                                     "
-                                >
+                                  >
                                     <tr>
-                                    <td align="center" valign="middle">
+                                      <td align="center" valign="middle">
                                         <a
-                                        href="${twitterLink}"
-                                        target="_blank"
-                                        style="
+                                          href="${twitterLink}"
+                                          target="_blank"
+                                          style="
                                             display: block;
-                                            font-size: 16px;
-                                            font-weight: 600;
-                                            font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
-                                            color: #375dfb;
                                             text-decoration: none;
-                                        "
-                                        >T</a
+                                          "
                                         >
-                                    </td>
+                                          <img
+                                            alt="Sole's Logo"
+                                            height="17"
+                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon.svg"
+                                            width="17"
+                                            style="
+                                              display: block;
+                                              margin: 0 auto;
+                                              outline: none;
+                                              border: none;
+                                              text-decoration: none;
+                                            "
+                                          />
+                                        </a>
+                                      </td>
                                     </tr>
-                                </table>
+                                  </table>
                                 </td>
 
                                 <!-- LinkedIn -->
                                 <td align="center" style="padding: 0 8px">
-                                <table
+                                  <table
                                     role="presentation"
                                     border="0"
                                     cellpadding="0"
                                     cellspacing="0"
                                     style="
-                                    width: 35px;
-                                    height: 35px;
-                                    border-radius: 8px;
-                                    background-color: #ffffff;
-                                    border: 1px solid #1516231f;
+                                      width: 30px;
+                                      height: 30px;
+                                      border-radius: 8px;
+                                      background-color: #ffffff;
+                                      border: 1px solid #1516231f;
                                     "
-                                >
+                                  >
                                     <tr>
-                                    <td align="center" valign="middle">
+                                      <td align="center" valign="middle">
                                         <a
-                                        href="${linkedinLink}"
-                                        target="_blank"
-                                        style="
+                                          href="${linkedinLink}"
+                                          target="_blank"
+                                          style="
                                             display: block;
-                                            font-size: 16px;
-                                            font-weight: 600;
-                                            font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
-                                            color: #375dfb;
                                             text-decoration: none;
-                                        "
-                                        >L</a
+                                          "
                                         >
-                                    </td>
+                                          <img
+                                            alt="Sole's Logo"
+                                            height="20"
+                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon+(1).svg"
+                                            width="20"
+                                            style="
+                                              display: block;
+                                              margin: 0 auto;
+                                              outline: none;
+                                              border: none;
+                                              text-decoration: none;
+                                            "
+                                          />
+                                        </a>
+                                      </td>
                                     </tr>
-                                </table>
+                                  </table>
                                 </td>
 
                                 <!-- Facebook -->
                                 <td align="center" style="padding: 0 8px">
-                                <table
+                                  <table
                                     role="presentation"
                                     border="0"
                                     cellpadding="0"
                                     cellspacing="0"
                                     style="
-                                    width: 35px;
-                                    height: 35px;
-                                    border-radius: 8px;
-                                    background-color: #ffffff;
-                                    border: 1px solid #1516231f;
+                                      width: 30px;
+                                      height: 30px;
+                                      border-radius: 8px;
+                                      background-color: #ffffff;
+                                      border: 1px solid #1516231f;
                                     "
-                                >
+                                  >
                                     <tr>
-                                    <td align="center" valign="middle">
+                                      <td align="center" valign="middle">
                                         <a
-                                        href="${facebookLink}"
-                                        target="_blank"
-                                        style="
+                                          href="${facebookLink}"
+                                          target="_blank"
+                                          style="
                                             display: block;
-                                            font-size: 16px;
-                                            font-weight: 600;
-                                            font-family: 'Plus Jakarta Sans', Arial, Helvetica, sans-serif;
-                                            color: #375dfb;
                                             text-decoration: none;
-                                        "
-                                        >F</a
+                                          "
                                         >
-                                    </td>
+                                          <img
+                                            alt="Sole's Logo"
+                                            height="20"
+                                            src="https://soleapp.s3.ap-southeast-2.amazonaws.com/New+folder+(2)+(1)/New+folder+(2)/Social+icon+(2).svg"
+                                            width="20"
+                                            style="
+                                              display: block;
+                                              margin: 0 auto;
+                                              outline: none;
+                                              border: none;
+                                              text-decoration: none;
+                                            "
+                                          />
+                                        </a>
+                                      </td>
                                     </tr>
-                                </table>
+                                  </table>
                                 </td>
-                            </tr>
+                              </tr>
                             </table>
-
 
                             <!-- help center links -->
                             <table

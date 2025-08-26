@@ -9,6 +9,7 @@ import { verification } from "./EmailTemplates/verification.js";
 import { otp } from "./EmailTemplates/otp.js";
 import { invoiceReminder } from "./EmailTemplates/invoiceReminder.js";
 import { transactionListing } from "./EmailTemplates/transactionListing.js";
+import { invoice } from "./EmailTemplates/invoice.js";
 
 dotenv.config();
 
@@ -145,6 +146,22 @@ const transactionListingParams = {
   playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
 };
 
+const newInvoiceParams = {
+  userName: "Ashish Rautela",
+  invoiceNo: "INV-123456",
+  invoiceAmt: "AUD $225.00",
+  dueDate: "01 Aug 2025",
+  worldPayLink: "https://worldpay.com/en-GB",
+  twitterLink: "https://x.com/home",
+  linkedinLink: "https://www.linkedin.com/",
+  facebookLink: "https://www.facebook.com/",
+  helpcenterLink: "https://fdev.soleapp.com.au/",
+  privacyLink: "https://fdev.soleapp.com.au/",
+  termsLink: "https://fdev.soleapp.com.au/",
+  appStoreLink: "https://www.apple.com/in/app-store/",
+  playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+};
+
 const pdfBase64 = async () => {
   const response = await fetch(
     "https://morth.nic.in/sites/default/files/dd12-13_0.pdf"
@@ -228,16 +245,30 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   ],
     // });
 
-    const transListingBase64 = await xlsxBase64();
+    // const transListingBase64 = await xlsxBase64();
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: transactionListing(transactionListingParams),
+    //   attachments: [
+    //     {
+    //       filename: "report.xlsx",
+    //       content: transListingBase64,
+    //     },
+    //   ],
+    // });
+
+    const newInvoiceBase64 = await pdfBase64();
     await resend.emails.send({
       from: "PaidEarly <support@paidearly.in>",
       to: adminEmail,
       subject: "Welcome to Sole",
-      html: transactionListing(transactionListingParams),
+      html: invoice(newInvoiceParams),
       attachments: [
         {
-          filename: "report.xlsx",
-          content: transListingBase64,
+          filename: "INV-02.pdf",
+          content: newInvoiceBase64,
         },
       ],
     });

@@ -10,6 +10,7 @@ import { otp } from "./EmailTemplates/otp.js";
 import { invoiceReminder } from "./EmailTemplates/invoiceReminder.js";
 import { transactionListing } from "./EmailTemplates/transactionListing.js";
 import { invoice } from "./EmailTemplates/invoice.js";
+import { welcome } from "./EmailTemplates/welcome.js";
 
 dotenv.config();
 
@@ -162,6 +163,21 @@ const newInvoiceParams = {
   playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
 };
 
+const welcomeEmailParams = {
+  videoLink:
+    "https://www.youtube.com/watch?v=pRpeEdMmmQ0&list=RDkJQP7kiw5Fk&index=2",
+  completeSetupBtnLink: "https://fdev.soleapp.com.au/",
+  bootcampLink: "https://fdev.soleapp.com.au/",
+  knowledgeHubLink: "https://fdev.soleapp.com.au/",
+  unsubscribeLink: "https://fdev.soleapp.com.au/",
+  twitterLink: "https://x.com/home",
+  linkedinLink: "https://www.linkedin.com/",
+  facebookLink: "https://www.facebook.com/",
+  helpcenterLink: "https://fdev.soleapp.com.au/",
+  privacyLink: "https://fdev.soleapp.com.au/",
+  termsLink: "https://fdev.soleapp.com.au/",
+};
+
 const pdfBase64 = async () => {
   const response = await fetch(
     "https://morth.nic.in/sites/default/files/dd12-13_0.pdf"
@@ -182,12 +198,12 @@ const xlsxBase64 = async () => {
 
 export const sendCompanyCreationEmail = async (adminEmail) => {
   try {
-    await resend.emails.send({
-      from: "PaidEarly <support@paidearly.in>",
-      to: adminEmail,
-      subject: "Welcome to Sole",
-      html: invitationEmail(inviteParams),
-    });
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: invitationEmail(inviteParams),
+    // });
 
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
@@ -272,10 +288,17 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //     },
     //   ],
     // });
+
+    await resend.emails.send({
+      from: "PaidEarly <support@paidearly.in>",
+      to: adminEmail,
+      subject: "Welcome to Sole",
+      html: welcome(welcomeEmailParams),
+    });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {
     console.error(`Error sending email to ${adminEmail}:`, error);
   }
 };
 
-sendCompanyCreationEmail("2000rahuljoshi@gmail.com");
+sendCompanyCreationEmail("asisrautela612@gmail.com");

@@ -301,4 +301,4 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
   }
 };
 
-sendCompanyCreationEmail("test@gmail.com");
+sendCompanyCreationEmail("2000rahuljoshi@gmail.com");

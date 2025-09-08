@@ -294,7 +294,7 @@ export const referral = ({
                                           color: #0a0d14;
                                           font-size: 14px;
                                           font-weight: 400;
-                                          margin-top: 10px;
+                                          margin-top: 0px;
                                           margin-bottom: 0;
                                           font-family: 'Plus Jakarta Sans',
                                             Arial, Helvetica, sans-serif;
@@ -308,7 +308,7 @@ export const referral = ({
                                           color: #0a0d14;
                                           font-size: 14px;
                                           font-weight: 400;
-                                          margin-top: 10px;
+                                          margin-top: 0px;
                                           margin-bottom: 0;
                                           font-family: 'Plus Jakarta Sans',
                                             Arial, Helvetica, sans-serif;

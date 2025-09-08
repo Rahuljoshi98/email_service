@@ -11,6 +11,7 @@ import { invoiceReminder } from "./EmailTemplates/invoiceReminder.js";
 import { transactionListing } from "./EmailTemplates/transactionListing.js";
 import { invoice } from "./EmailTemplates/invoice.js";
 import { welcome } from "./EmailTemplates/welcome.js";
+import { referral } from "./EmailTemplates/referral.js";
 
 dotenv.config();
 
@@ -123,6 +124,23 @@ const invoiceReminderParams = {
   bsbNo: "001122",
   accNo: "XXX1234",
   regardsBy: "Rahul Joshi",
+  twitterLink: "https://x.com/home",
+  linkedinLink: "https://www.linkedin.com/",
+  facebookLink: "https://www.facebook.com/",
+  helpcenterLink: "https://fdev.soleapp.com.au/",
+  privacyLink: "https://fdev.soleapp.com.au/",
+  termsLink: "https://fdev.soleapp.com.au/",
+  appStoreLink: "https://www.apple.com/in/app-store/",
+  playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+};
+
+const referralParams = {
+  inviteeEmail: "ashish@gmail.com",
+  freeDays: "12",
+  industryLink: "https://fdev.soleapp.com.au/",
+  quickStartGuideLink: "https://fdev.soleapp.com.au/",
+  acceptInvitationLink: "https://fdev.soleapp.com.au/",
+  founderName: "Rahul Joshi",
   twitterLink: "https://x.com/home",
   linkedinLink: "https://www.linkedin.com/",
   facebookLink: "https://www.facebook.com/",
@@ -289,11 +307,18 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   ],
     // });
 
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: welcome(welcomeEmailParams),
+    // });
+
     await resend.emails.send({
       from: "PaidEarly <support@paidearly.in>",
       to: adminEmail,
       subject: "Welcome to Sole",
-      html: welcome(welcomeEmailParams),
+      html: referral(referralParams),
     });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {
@@ -301,4 +326,4 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
   }
 };
 
-sendCompanyCreationEmail("2000rahuljoshi@gmail.com");
+sendCompanyCreationEmail("rahul2000joshi@outlook.com");

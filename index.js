@@ -12,10 +12,12 @@ import { transactionListing } from "./EmailTemplates/transactionListing.js";
 import { invoice } from "./EmailTemplates/invoice.js";
 import { welcome } from "./EmailTemplates/welcome.js";
 import { referral } from "./EmailTemplates/referral.js";
+import { balanceSheet } from "./EmailTemplates/balanceSheet.js";
 
 dotenv.config();
 
 const resendApiKey = process.env.RESEND_API_KEY;
+const emailId = process.env.Email_Id;
 
 const resend = new Resend(resendApiKey);
 
@@ -196,6 +198,20 @@ const welcomeEmailParams = {
   termsLink: "https://fdev.soleapp.com.au/",
 };
 
+const balanceSheetParams = {
+  userName: "Ashish Rautela",
+  balanceTo: "01 Aug 2025",
+  balanceFrom: "15 Aug 2025",
+  twitterLink: "https://x.com/home",
+  linkedinLink: "https://www.linkedin.com/",
+  facebookLink: "https://www.facebook.com/",
+  helpcenterLink: "https://fdev.soleapp.com.au/",
+  privacyLink: "https://fdev.soleapp.com.au/",
+  termsLink: "https://fdev.soleapp.com.au/",
+  appStoreLink: "https://www.apple.com/in/app-store/",
+  playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+};
+
 const pdfBase64 = async () => {
   const response = await fetch(
     "https://morth.nic.in/sites/default/files/dd12-13_0.pdf"
@@ -314,11 +330,25 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   html: welcome(welcomeEmailParams),
     // });
 
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: referral(referralParams),
+    // });
+
+    const balanceSheetBase64 = await xlsxBase64();
     await resend.emails.send({
       from: "PaidEarly <support@paidearly.in>",
       to: adminEmail,
       subject: "Welcome to Sole",
-      html: referral(referralParams),
+      html: balanceSheet(balanceSheetParams),
+      attachments: [
+        {
+          filename: "report.xlsx",
+          content: balanceSheetBase64,
+        },
+      ],
     });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {
@@ -326,4 +356,4 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
   }
 };
 
-sendCompanyCreationEmail("2000rahuljoshi@gmail.com");
+sendCompanyCreationEmail(emailId);

@@ -341,11 +341,7 @@ export const trialOver = ({
                                             width="100%"
                                             style="
                                               border-radius: 12px;
-                                              background: linear-gradient(
-                                                135deg,
-                                                #000000 0%,
-                                                #001b70 100%
-                                              );
+                                              background-color: #4d4dff;
                                               text-align: center;
                                             "
                                           >
@@ -381,7 +377,7 @@ export const trialOver = ({
                                                       sans-serif;
                                                     font-size: 14px;
                                                     font-weight: 400;
-                                                    color: #d9d9d9;
+                                                    color: #ffffff;
                                                   "
                                                 >
                                                   Simply visit the app store to

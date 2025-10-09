@@ -13,6 +13,7 @@ import { invoice } from "./EmailTemplates/invoice.js";
 import { welcome } from "./EmailTemplates/welcome.js";
 import { referral } from "./EmailTemplates/referral.js";
 import { balanceSheet } from "./EmailTemplates/balanceSheet.js";
+import { whatsNew } from "./EmailTemplates/whatsNew.js";
 
 dotenv.config();
 
@@ -212,6 +213,21 @@ const balanceSheetParams = {
   playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
 };
 
+const whatsNewParams = {
+  userName: "Ashish Rautela",
+  enableAiAccessLink: "https://fdev.soleapp.com.au/",
+  exploreDashboardLink: "https://fdev.soleapp.com.au/",
+  whatsNewLink: "https://fdev.soleapp.com.au/",
+  founderName: "Ashish Rautela",
+  getStartedLink: "https://fdev.soleapp.com.au/",
+  twitterLink: "https://x.com/home",
+  linkedinLink: "https://www.linkedin.com/",
+  facebookLink: "https://www.facebook.com/",
+  helpcenterLink: "https://fdev.soleapp.com.au/",
+  privacyLink: "https://fdev.soleapp.com.au/",
+  termsLink: "https://fdev.soleapp.com.au/",
+};
+
 const pdfBase64 = async () => {
   const response = await fetch(
     "https://morth.nic.in/sites/default/files/dd12-13_0.pdf"
@@ -337,18 +353,25 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   html: referral(referralParams),
     // });
 
-    const balanceSheetBase64 = await xlsxBase64();
-    await resend.emails.send({
-      from: "PaidEarly <support@paidearly.in>",
+    // const balanceSheetBase64 = await xlsxBase64();
+    // await resend.emails.send({
+    //   from: "Waply <support@waply.co>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: balanceSheet(balanceSheetParams),
+    //   attachments: [
+    //     {
+    //       filename: "report.xlsx",
+    //       content: balanceSheetBase64,
+    //     },
+    //   ],
+    // });
+
+    const res = await resend.emails.send({
+      from: "HariGaji <support@mail.harigaji.com>",
       to: adminEmail,
       subject: "Welcome to Sole",
-      html: balanceSheet(balanceSheetParams),
-      attachments: [
-        {
-          filename: "report.xlsx",
-          content: balanceSheetBase64,
-        },
-      ],
+      html: whatsNew(whatsNewParams),
     });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {

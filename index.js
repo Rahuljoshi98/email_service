@@ -14,6 +14,7 @@ import { welcome } from "./EmailTemplates/welcome.js";
 import { referral } from "./EmailTemplates/referral.js";
 import { balanceSheet } from "./EmailTemplates/balanceSheet.js";
 import { whatsNew } from "./EmailTemplates/whatsNew.js";
+import { newsLetter } from "./EmailTemplates/newsLetter.js";
 
 dotenv.config();
 
@@ -228,6 +229,16 @@ const whatsNewParams = {
   termsLink: "https://fdev.soleapp.com.au/",
 };
 
+const newsLetterParams = {
+  userName: "Rahul Joshi",
+  twitterLink: "https://x.com/home",
+  linkedinLink: "https://www.linkedin.com/",
+  facebookLink: "https://www.facebook.com/",
+  helpcenterLink: "https://fdev.soleapp.com.au/",
+  privacyLink: "https://fdev.soleapp.com.au/",
+  termsLink: "https://fdev.soleapp.com.au/",
+};
+
 const pdfBase64 = async () => {
   const response = await fetch(
     "https://morth.nic.in/sites/default/files/dd12-13_0.pdf"
@@ -367,11 +378,18 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   ],
     // });
 
+    // const res = await resend.emails.send({
+    //   from: "HariGaji <support@mail.harigaji.com>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: whatsNew(whatsNewParams),
+    // });
+
     const res = await resend.emails.send({
       from: "HariGaji <support@mail.harigaji.com>",
       to: adminEmail,
       subject: "Welcome to Sole",
-      html: whatsNew(whatsNewParams),
+      html: newsLetter(newsLetterParams),
     });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {

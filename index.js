@@ -336,19 +336,19 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   ],
     // });
 
-    // const newInvoiceBase64 = await pdfBase64();
-    // await resend.emails.send({
-    //   from: "PaidEarly <support@paidearly.in>",
-    //   to: adminEmail,
-    //   subject: "Welcome to Sole",
-    //   html: invoice(newInvoiceParams),
-    //   attachments: [
-    //     {
-    //       filename: "INV-02.pdf",
-    //       content: newInvoiceBase64,
-    //     },
-    //   ],
-    // });
+    const newInvoiceBase64 = await pdfBase64();
+    await resend.emails.send({
+      from: "PaidEarly <support@paidearly.in>",
+      to: adminEmail,
+      subject: "Welcome to Sole",
+      html: invoice(newInvoiceParams),
+      attachments: [
+        {
+          filename: "INV-02.pdf",
+          content: newInvoiceBase64,
+        },
+      ],
+    });
 
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
@@ -385,12 +385,12 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   html: whatsNew(whatsNewParams),
     // });
 
-    const res = await resend.emails.send({
-      from: "HariGaji <support@mail.harigaji.com>",
-      to: adminEmail,
-      subject: "Welcome to Sole",
-      html: newsLetter(newsLetterParams),
-    });
+    // const res = await resend.emails.send({
+    //   from: "HariGaji <support@mail.harigaji.com>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: newsLetter(newsLetterParams),
+    // });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {
     console.error(`Error sending email to ${adminEmail}:`, error);

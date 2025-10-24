@@ -12,7 +12,7 @@ export const invoice = ({
   termsLink,
   appStoreLink,
   playStoreLink,
-}) => `<!DOCTYPE html>
+}) => `<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -108,8 +108,8 @@ export const invoice = ({
                                         font-size: 14px;
                                         font-weight: 400;
                                         margin: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
+                                        font-family: &quot;Plus Jakarta Sans&quot;,
+                                          Arial, Helvetica, sans-serif;
                                       "
                                     >
                                       Less admin. More freedom.
@@ -138,8 +138,8 @@ export const invoice = ({
                                         font-size: 22px;
                                         font-weight: 600;
                                         margin: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
+                                        font-family: &quot;Plus Jakarta Sans&quot;,
+                                          Arial, Helvetica, sans-serif;
                                       "
                                     >
                                       New Invoice
@@ -151,8 +151,8 @@ export const invoice = ({
                                         font-weight: 600;
                                         margin-top: 14px;
                                         margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
+                                        font-family: &quot;Plus Jakarta Sans&quot;,
+                                          Arial, Helvetica, sans-serif;
                                       "
                                     >
                                       Hi ${userName},
@@ -164,20 +164,18 @@ export const invoice = ({
                                         font-weight: 400;
                                         margin-top: 12px;
                                         margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
+                                        font-family: &quot;Plus Jakarta Sans&quot;,
+                                          Arial, Helvetica, sans-serif;
                                       "
                                     >
-                                      Here's invoice
+                                      Here’s invoice
                                       <span style="font-weight: 600">
                                         ${invoiceNo}
                                       </span>
-
                                       for
                                       <span style="font-weight: 600">
                                         ${invoiceAmt}
                                       </span>
-
                                       from Sole App Pty Ltd.
                                     </p>
 
@@ -188,20 +186,20 @@ export const invoice = ({
                                         font-weight: 400;
                                         margin-top: 12px;
                                         margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
+                                        font-family: &quot;Plus Jakarta Sans&quot;,
+                                          Arial, Helvetica, sans-serif;
                                       "
                                     >
                                       The amount of
                                       <span style="font-weight: 600">
                                         ${invoiceAmt}
                                       </span>
-                                      is outstanding and is due on
+                                      is currently outstanding and is due on
                                       <span style="font-weight: 600">
                                         ${dueDate}
-                                      </span>
+                                      </span>.
                                     </p>
-
+                                    
                                     <p
                                       style="
                                         color: #0a0d14;
@@ -209,13 +207,13 @@ export const invoice = ({
                                         font-weight: 400;
                                         margin-top: 14px;
                                         margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
+                                        font-family: &quot;Plus Jakarta Sans&quot;,
+                                          Arial, Helvetica, sans-serif;
                                       "
                                     >
-                                      Pay this invoice quickly and securely
-                                      online using Worldpay (click the link
-                                      below)
+                                      You can pay this invoice quickly and
+                                      securely online using Worldpay by clicking
+                                      the link below:
                                     </p>
 
                                     <table
@@ -226,7 +224,6 @@ export const invoice = ({
                                       style="margin-top: 18px"
                                     >
                                       <tr>
-                                        <!-- pay with wordpay -->
                                         <td
                                           align="center"
                                           style="border-radius: 0px"
@@ -235,7 +232,7 @@ export const invoice = ({
                                             href="${worldPayLink}"
                                             style="
                                               display: inline-block;
-                                              font-family: 'Plus Jakarta Sans',
+                                              font-family: &quot;Plus Jakarta Sans&quot;,
                                                 Arial, Helvetica, sans-serif;
                                               font-size: 14px;
                                               font-weight: 500;
@@ -246,7 +243,7 @@ export const invoice = ({
                                               background-color: #4d4dff;
                                             "
                                           >
-                                            Pay With Worldpay
+                                            Pay with Worldpay
                                           </a>
                                         </td>
                                       </tr>
@@ -259,15 +256,14 @@ export const invoice = ({
                                         font-weight: 400;
                                         margin-top: 14px;
                                         margin-bottom: 0;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
+                                        font-family: &quot;Plus Jakarta Sans&quot;,
+                                          Arial, Helvetica, sans-serif;
                                       "
                                     >
-                                      If you have any questions, please let us
-                                      know.
+                                      If you have any questions, please don’t
+                                      hesitate to get in touch.
                                     </p>
 
-                                    <!-- best regards -->
                                     <div>
                                       <p
                                         style="
@@ -276,11 +272,11 @@ export const invoice = ({
                                           font-weight: 400;
                                           margin-top: 18px;
                                           margin-bottom: 0;
-                                          font-family: 'Plus Jakarta Sans',
+                                          font-family: &quot;Plus Jakarta Sans&quot;,
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
-                                        Best Regards
+                                        Kind regards,
                                       </p>
 
                                       <p
@@ -290,15 +286,14 @@ export const invoice = ({
                                           font-weight: 400;
                                           margin-top: 10px;
                                           margin-bottom: 0;
-                                          font-family: 'Plus Jakarta Sans',
+                                          font-family: &quot;Plus Jakarta Sans&quot;,
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
-                                        Sole App Team
+                                        The Sole App Team
                                       </p>
                                     </div>
 
-                                    <!-- downloads -->
                                     <table
                                       role="presentation"
                                       cellspacing="0"
@@ -314,7 +309,6 @@ export const invoice = ({
                                     >
                                       <tr>
                                         <td align="center">
-                                          <!-- Outer container -->
                                           <table
                                             role="presentation"
                                             cellspacing="0"
@@ -329,11 +323,10 @@ export const invoice = ({
                                           >
                                             <tr>
                                               <td style="padding: 12px 4px">
-                                                <!-- Heading -->
                                                 <p
                                                   style="
                                                     margin: 0;
-                                                    font-family: 'Plus Jakarta Sans',
+                                                    font-family: &quot;Plus Jakarta Sans&quot;,
                                                       Arial, Helvetica,
                                                       sans-serif;
                                                     font-size: 14px;
@@ -351,10 +344,9 @@ export const invoice = ({
                                                   today.
                                                 </p>
 
-                                                <!-- Subheading -->
                                                 <p
                                                   style="
-                                                    font-family: 'Plus Jakarta Sans',
+                                                    font-family: &quot;Plus Jakarta Sans&quot;,
                                                       Arial, Helvetica,
                                                       sans-serif;
                                                     font-size: 14px;
@@ -362,11 +354,10 @@ export const invoice = ({
                                                     color: #ffffff;
                                                   "
                                                 >
-                                                  Simply visit the app store to
+                                                  Simply visit your app store to
                                                   download the app.
                                                 </p>
 
-                                                <!-- Store buttons -->
                                                 <table
                                                   role="presentation"
                                                   cellspacing="0"
@@ -425,8 +416,6 @@ export const invoice = ({
                               </tbody>
                             </table>
                             <hr
-                              data-source-file="../emails/magic-links/aws-verify-email.tsx"
-                              data-source-line="58"
                               style="
                                 width: 100%;
                                 border: none;
@@ -434,7 +423,6 @@ export const invoice = ({
                               "
                             />
 
-                            <!-- socials -->
                             <table
                               align="center"
                               width="100%"
@@ -473,17 +461,16 @@ export const invoice = ({
                                   margin-top: 6px;
                                   margin-bottom: 0;
                                   padding: 0 12px;
-                                  font-family: 'Plus Jakarta Sans', Arial,
-                                    Helvetica, sans-serif;
+                                  font-family: &quot;Plus Jakarta Sans&quot;,
+                                    Arial, Helvetica, sans-serif;
                                   text-align: center;
                                 "
                               >
-                                Best Accounting App for Sole Traders &
-                                Freelancers
+                                Best accounting app for sole traders and
+                                freelancers
                               </p>
                             </div>
 
-                            <!-- Social Icons -->
                             <table
                               role="presentation"
                               border="0"
@@ -493,141 +480,53 @@ export const invoice = ({
                               style="margin: 20px auto"
                             >
                               <tr>
-                                <!-- Twitter -->
                                 <td align="center" style="padding: 0 8px">
-                                  <table
-                                    role="presentation"
-                                    border="0"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    style="
-                                      width: 30px;
-                                      height: 30px;
-                                      border-radius: 8px;
-                                      background-color: #ffffff;
-                                      border: 1px solid #1516231f;
-                                    "
+                                  <a
+                                    href="${twitterLink}"
+                                    target="_blank"
+                                    style="text-decoration: none"
                                   >
-                                    <tr>
-                                      <td align="center" valign="middle">
-                                        <a
-                                          href="${twitterLink}"
-                                          target="_blank"
-                                          style="
-                                            display: block;
-                                            text-decoration: none;
-                                          "
-                                        >
-                                          <img
-                                            alt="Twitter"
-                                            height="17"
-                                            src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/twitter.png"
-                                            width="17"
-                                            style="
-                                              display: block;
-                                              margin: 0 auto;
-                                              outline: none;
-                                              border: none;
-                                              text-decoration: none;
-                                            "
-                                          />
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </table>
+                                    <img
+                                      alt="Twitter"
+                                      height="17"
+                                      src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/twitter.png"
+                                      width="17"
+                                    />
+                                  </a>
                                 </td>
 
-                                <!-- LinkedIn -->
                                 <td align="center" style="padding: 0 8px">
-                                  <table
-                                    role="presentation"
-                                    border="0"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    style="
-                                      width: 30px;
-                                      height: 30px;
-                                      border-radius: 8px;
-                                      background-color: #ffffff;
-                                      border: 1px solid #1516231f;
-                                    "
+                                  <a
+                                    href="${linkedinLink}"
+                                    target="_blank"
+                                    style="text-decoration: none"
                                   >
-                                    <tr>
-                                      <td align="center" valign="middle">
-                                        <a
-                                          href="${linkedinLink}"
-                                          target="_blank"
-                                          style="
-                                            display: block;
-                                            text-decoration: none;
-                                          "
-                                        >
-                                          <img
-                                            alt="linkedin"
-                                            height="20"
-                                            src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/linkedin.png"
-                                            width="20"
-                                            style="
-                                              display: block;
-                                              margin: 0 auto;
-                                              outline: none;
-                                              border: none;
-                                              text-decoration: none;
-                                            "
-                                          />
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </table>
+                                    <img
+                                      alt="LinkedIn"
+                                      height="20"
+                                      src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/linkedin.png"
+                                      width="20"
+                                    />
+                                  </a>
                                 </td>
 
-                                <!-- Facebook -->
                                 <td align="center" style="padding: 0 8px">
-                                  <table
-                                    role="presentation"
-                                    border="0"
-                                    cellpadding="0"
-                                    cellspacing="0"
-                                    style="
-                                      width: 30px;
-                                      height: 30px;
-                                      border-radius: 8px;
-                                      background-color: #ffffff;
-                                      border: 1px solid #1516231f;
-                                    "
+                                  <a
+                                    href="${facebookLink}"
+                                    target="_blank"
+                                    style="text-decoration: none"
                                   >
-                                    <tr>
-                                      <td align="center" valign="middle">
-                                        <a
-                                          href="${facebookLink}"
-                                          target="_blank"
-                                          style="
-                                            display: block;
-                                            text-decoration: none;
-                                          "
-                                        >
-                                          <img
-                                            alt="facebook"
-                                            height="20"
-                                            src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/facebook.png"
-                                            width="20"
-                                            style="
-                                              display: block;
-                                              margin: 0 auto;
-                                              outline: none;
-                                              border: none;
-                                              text-decoration: none;
-                                            "
-                                          />
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </table>
+                                    <img
+                                      alt="Facebook"
+                                      height="20"
+                                      src="https://s3.ap-southeast-2.amazonaws.com/assets.soleapp.com.au/logo/facebook.png"
+                                      width="20"
+                                    />
+                                  </a>
                                 </td>
                               </tr>
                             </table>
 
-                            <!-- help center links -->
                             <table
                               role="presentation"
                               border="0"
@@ -637,60 +536,48 @@ export const invoice = ({
                               style="margin: 20px auto 30px auto"
                             >
                               <tr>
-                                <td
-                                  align="center"
-                                  style="line-height: 0; padding: 0 8px"
-                                >
+                                <td align="center" style="padding: 0 8px">
                                   <a
                                     href="${helpcenterLink}"
-                                    data-source-line="71"
                                     style="
                                       color: #375dfb;
                                       text-decoration-line: underline;
                                       font-size: 14px;
                                       font-weight: 400;
-                                      font-family: 'Plus Jakarta Sans', Arial,
-                                        Helvetica, sans-serif;
+                                      font-family: &quot;Plus Jakarta Sans&quot;,
+                                        Arial, Helvetica, sans-serif;
                                     "
                                     target="_blank"
-                                    >Help Center</a
+                                    >Help Centre</a
                                   >
                                 </td>
 
-                                <td
-                                  align="center"
-                                  style="line-height: 0; padding: 0 8px"
-                                >
+                                <td align="center" style="padding: 0 8px">
                                   <a
                                     href="${privacyLink}"
-                                    data-source-line="71"
                                     style="
                                       color: #375dfb;
                                       text-decoration-line: underline;
                                       font-size: 14px;
                                       font-weight: 400;
-                                      font-family: 'Plus Jakarta Sans', Arial,
-                                        Helvetica, sans-serif;
+                                      font-family: &quot;Plus Jakarta Sans&quot;,
+                                        Arial, Helvetica, sans-serif;
                                     "
                                     target="_blank"
                                     >Privacy</a
                                   >
                                 </td>
 
-                                <td
-                                  align="center"
-                                  style="line-height: 0; padding: 0 8px"
-                                >
+                                <td align="center" style="padding: 0 8px">
                                   <a
                                     href="${termsLink}"
-                                    data-source-line="71"
                                     style="
                                       color: #375dfb;
                                       text-decoration-line: underline;
                                       font-size: 14px;
                                       font-weight: 400;
-                                      font-family: 'Plus Jakarta Sans', Arial,
-                                        Helvetica, sans-serif;
+                                      font-family: &quot;Plus Jakarta Sans&quot;,
+                                        Arial, Helvetica, sans-serif;
                                     "
                                     target="_blank"
                                     >Terms & Conditions</a
@@ -719,12 +606,13 @@ export const invoice = ({
                                         color: white;
                                         font-size: 14px;
                                         font-weight: 400;
-                                        font-family: 'Plus Jakarta Sans', Arial,
-                                          Helvetica, sans-serif;
+                                        font-family: &quot;Plus Jakarta Sans&quot;,
+                                          Arial, Helvetica, sans-serif;
                                         margin: 0;
                                       "
                                     >
-                                      ©2025 SOLEAPP, All Rights Reserved
+                                      ©2025 Sole App Pty Ltd. All rights
+                                      reserved.
                                     </p>
                                   </td>
                                 </tr>
@@ -742,7 +630,6 @@ export const invoice = ({
         </tr>
       </tbody>
     </table>
-    <!--/$-->
   </body>
 </html>
 `;

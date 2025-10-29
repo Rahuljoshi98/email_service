@@ -129,6 +129,19 @@ export const shareAccess = ({
                               <tbody>
                                 <tr>
                                   <td>
+                                  <h1
+                                      style="
+                                        color: #0a0d14;
+                                        font-size: 22px;
+                                        font-weight: 600;
+                                        margin: 0;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
+                                        text-align: center;
+                                      "
+                                    >
+                                      Shared access has been accepted.
+                                    </h1>
                                     <p
                                       style="
                                         color: #0a0d14;

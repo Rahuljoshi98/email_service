@@ -15,6 +15,7 @@ import { referral } from "./EmailTemplates/referral.js";
 import { balanceSheet } from "./EmailTemplates/balanceSheet.js";
 import { whatsNew } from "./EmailTemplates/whatsNew.js";
 import { newsLetter } from "./EmailTemplates/newsLetter.js";
+import { shareAccess } from "./EmailTemplates/shareAccess.js";
 
 dotenv.config();
 
@@ -239,6 +240,20 @@ const newsLetterParams = {
   termsLink: "https://fdev.soleapp.com.au/",
 };
 
+const shareAccessParams = {
+  userName: "Ashish Rautela",
+  supportCenterLink:
+    "https://soleapp.atlassian.net/servicedesk/customer/user/login?destination=portals",
+  twitterLink: "https://x.com/home",
+  linkedinLink: "https://www.linkedin.com/",
+  facebookLink: "https://www.facebook.com/",
+  helpcenterLink: "https://fdev.soleapp.com.au/",
+  privacyLink: "https://fdev.soleapp.com.au/",
+  termsLink: "https://fdev.soleapp.com.au/",
+  appStoreLink: "https://www.apple.com/in/app-store/",
+  playStoreLink: "https://play.google.com/store/games?hl=en_IN&pli=1",
+};
+
 const pdfBase64 = async () => {
   const response = await fetch(
     "https://morth.nic.in/sites/default/files/dd12-13_0.pdf"
@@ -336,19 +351,19 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   ],
     // });
 
-    const newInvoiceBase64 = await pdfBase64();
-    await resend.emails.send({
-      from: "PaidEarly <support@paidearly.in>",
-      to: adminEmail,
-      subject: "Welcome to Sole",
-      html: invoice(newInvoiceParams),
-      attachments: [
-        {
-          filename: "INV-02.pdf",
-          content: newInvoiceBase64,
-        },
-      ],
-    });
+    // const newInvoiceBase64 = await pdfBase64();
+    // await resend.emails.send({
+    //   from: "PaidEarly <support@paidearly.in>",
+    //   to: adminEmail,
+    //   subject: "Welcome to Sole",
+    //   html: invoice(newInvoiceParams),
+    //   attachments: [
+    //     {
+    //       filename: "INV-02.pdf",
+    //       content: newInvoiceBase64,
+    //     },
+    //   ],
+    // });
 
     // await resend.emails.send({
     //   from: "PaidEarly <support@paidearly.in>",
@@ -391,6 +406,13 @@ export const sendCompanyCreationEmail = async (adminEmail) => {
     //   subject: "Welcome to Sole",
     //   html: newsLetter(newsLetterParams),
     // });
+
+    const res = await resend.emails.send({
+      from: "PaidEarly <support@paidearly.in>",
+      to: adminEmail,
+      subject: "Welcome to Sole",
+      html: shareAccess(shareAccessParams),
+    });
     console.log(`Email sent successfully to ${adminEmail}`);
   } catch (error) {
     console.error(`Error sending email to ${adminEmail}:`, error);

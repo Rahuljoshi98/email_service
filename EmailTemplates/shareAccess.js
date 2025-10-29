@@ -1,9 +1,6 @@
-export const invoice = ({
+export const shareAccess = ({
   userName,
-  invoiceNo,
-  invoiceAmt,
-  dueDate,
-  worldPayLink,
+  supportCenterLink,
   twitterLink,
   linkedinLink,
   facebookLink,
@@ -12,7 +9,7 @@ export const invoice = ({
   termsLink,
   appStoreLink,
   playStoreLink,
-}) => `<!doctype html>
+}) => `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -108,8 +105,8 @@ export const invoice = ({
                                         font-size: 14px;
                                         font-weight: 400;
                                         margin: 0;
-                                        font-family: &quot;Plus Jakarta Sans&quot;,
-                                          Arial, Helvetica, sans-serif;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
                                       "
                                     >
                                       Less admin. More freedom.
@@ -132,30 +129,17 @@ export const invoice = ({
                               <tbody>
                                 <tr>
                                   <td>
-                                    <h1
-                                      style="
-                                        color: #0a0d14;
-                                        font-size: 22px;
-                                        font-weight: 600;
-                                        margin: 0;
-                                        font-family: &quot;Plus Jakarta Sans&quot;,
-                                          Arial, Helvetica, sans-serif;
-                                      "
-                                    >
-                                      New Invoice
-                                    </h1>
                                     <p
                                       style="
                                         color: #0a0d14;
                                         font-size: 14px;
-                                        font-weight: 600;
-                                        margin-top: 14px;
+                                        font-weight: 400;
                                         margin-bottom: 0;
-                                        font-family: &quot;Plus Jakarta Sans&quot;,
-                                          Arial, Helvetica, sans-serif;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
                                       "
                                     >
-                                      Hi ${userName},
+                                      Hello,
                                     </p>
                                     <p
                                       style="
@@ -164,19 +148,16 @@ export const invoice = ({
                                         font-weight: 400;
                                         margin-top: 12px;
                                         margin-bottom: 0;
-                                        font-family: &quot;Plus Jakarta Sans&quot;,
-                                          Arial, Helvetica, sans-serif;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
                                       "
                                     >
-                                      Here’s invoice
+                                      Your invitation to
                                       <span style="font-weight: 600">
-                                        ${invoiceNo}
+                                        ${userName}
                                       </span>
-                                      for
-                                      <span style="font-weight: 600">
-                                        ${invoiceAmt}
-                                      </span>
-                                      from Sole App Pty Ltd.
+                                      to collaborate using Sole has been
+                                      accepted.
                                     </p>
 
                                     <p
@@ -186,20 +167,80 @@ export const invoice = ({
                                         font-weight: 400;
                                         margin-top: 12px;
                                         margin-bottom: 0;
-                                        font-family: &quot;Plus Jakarta Sans&quot;,
-                                          Arial, Helvetica, sans-serif;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
                                       "
                                     >
-                                      The amount of
-                                      <span style="font-weight: 600">
-                                        ${invoiceAmt}
-                                      </span>
-                                      is currently outstanding and is due on
-                                      <span style="font-weight: 600">
-                                        ${dueDate}
-                                      </span>.
+                                      Depending on the access rights you have
+                                      assigned, they can now use Sole’s Command
+                                      Centre to:
                                     </p>
-                                    
+
+                                    <ul style="padding-left: 12px">
+                                      <li
+                                        style="
+                                          color: #0a0d14;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          margin-bottom: 0;
+                                          margin-left: 15px;
+                                          font-family: 'Plus Jakarta Sans',
+                                            Arial, Helvetica, sans-serif;
+                                        "
+                                      >
+                                        Access and manage your financial data
+                                        and accounting records seamlessly.
+                                      </li>
+
+                                      <li
+                                        style="
+                                          color: #0a0d14;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          margin-bottom: 0;
+                                          margin-top: 6px;
+                                          margin-left: 15px;
+                                          font-family: 'Plus Jakarta Sans',
+                                            Arial, Helvetica, sans-serif;
+                                        "
+                                      >
+                                        Coordinate budgeting, forecasting, and
+                                        taxation;
+                                      </li>
+
+                                      <li
+                                        style="
+                                          color: #0a0d14;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          margin-bottom: 0;
+                                          margin-top: 6px;
+                                          margin-left: 15px;
+                                          font-family: 'Plus Jakarta Sans',
+                                            Arial, Helvetica, sans-serif;
+                                        "
+                                      >
+                                        Access Sole’s Support and Knowledge
+                                        platform; and
+                                      </li>
+
+                                      <li
+                                        style="
+                                          color: #0a0d14;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          margin-bottom: 0;
+                                          margin-top: 6px;
+                                          margin-left: 15px;
+                                          font-family: 'Plus Jakarta Sans',
+                                            Arial, Helvetica, sans-serif;
+                                        "
+                                      >
+                                        Make informed decisions with real-time
+                                        insights.
+                                      </li>
+                                    </ul>
+
                                     <p
                                       style="
                                         color: #0a0d14;
@@ -207,13 +248,14 @@ export const invoice = ({
                                         font-weight: 400;
                                         margin-top: 14px;
                                         margin-bottom: 0;
-                                        font-family: &quot;Plus Jakarta Sans&quot;,
-                                          Arial, Helvetica, sans-serif;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
                                       "
                                     >
-                                      You can pay this invoice quickly and
-                                      securely online using Worldpay by clicking
-                                      the link below:
+                                      For more information on how to manage,
+                                      maintain and remove shared access to your
+                                      account, check out Sole’s support and
+                                      knowledge hub.
                                     </p>
 
                                     <table
@@ -229,10 +271,10 @@ export const invoice = ({
                                           style="border-radius: 0px"
                                         >
                                           <a
-                                            href="${worldPayLink}"
+                                            href="${supportCenterLink}"
                                             style="
                                               display: inline-block;
-                                              font-family: &quot;Plus Jakarta Sans&quot;,
+                                              font-family: 'Plus Jakarta Sans',
                                                 Arial, Helvetica, sans-serif;
                                               font-size: 14px;
                                               font-weight: 500;
@@ -243,7 +285,7 @@ export const invoice = ({
                                               background-color: #4d4dff;
                                             "
                                           >
-                                            Pay with Worldpay
+                                            Sole Support Center
                                           </a>
                                         </td>
                                       </tr>
@@ -257,7 +299,7 @@ export const invoice = ({
                                           font-weight: 400;
                                           margin-top: 18px;
                                           margin-bottom: 0;
-                                          font-family: &quot;Plus Jakarta Sans&quot;,
+                                          font-family: 'Plus Jakarta Sans',
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
@@ -271,7 +313,7 @@ export const invoice = ({
                                           font-weight: 400;
                                           margin-top: 10px;
                                           margin-bottom: 0;
-                                          font-family: &quot;Plus Jakarta Sans&quot;,
+                                          font-family: 'Plus Jakarta Sans',
                                             Arial, Helvetica, sans-serif;
                                         "
                                       >
@@ -311,7 +353,7 @@ export const invoice = ({
                                                 <p
                                                   style="
                                                     margin: 0;
-                                                    font-family: &quot;Plus Jakarta Sans&quot;,
+                                                    font-family: 'Plus Jakarta Sans',
                                                       Arial, Helvetica,
                                                       sans-serif;
                                                     font-size: 14px;
@@ -331,7 +373,7 @@ export const invoice = ({
 
                                                 <p
                                                   style="
-                                                    font-family: &quot;Plus Jakarta Sans&quot;,
+                                                    font-family: 'Plus Jakarta Sans',
                                                       Arial, Helvetica,
                                                       sans-serif;
                                                     font-size: 14px;
@@ -446,8 +488,8 @@ export const invoice = ({
                                   margin-top: 6px;
                                   margin-bottom: 0;
                                   padding: 0 12px;
-                                  font-family: &quot;Plus Jakarta Sans&quot;,
-                                    Arial, Helvetica, sans-serif;
+                                  font-family: 'Plus Jakarta Sans', Arial,
+                                    Helvetica, sans-serif;
                                   text-align: center;
                                 "
                               >
@@ -529,8 +571,8 @@ export const invoice = ({
                                       text-decoration-line: underline;
                                       font-size: 14px;
                                       font-weight: 400;
-                                      font-family: &quot;Plus Jakarta Sans&quot;,
-                                        Arial, Helvetica, sans-serif;
+                                      font-family: 'Plus Jakarta Sans', Arial,
+                                        Helvetica, sans-serif;
                                     "
                                     target="_blank"
                                     >Help Centre</a
@@ -545,8 +587,8 @@ export const invoice = ({
                                       text-decoration-line: underline;
                                       font-size: 14px;
                                       font-weight: 400;
-                                      font-family: &quot;Plus Jakarta Sans&quot;,
-                                        Arial, Helvetica, sans-serif;
+                                      font-family: 'Plus Jakarta Sans', Arial,
+                                        Helvetica, sans-serif;
                                     "
                                     target="_blank"
                                     >Privacy</a
@@ -561,8 +603,8 @@ export const invoice = ({
                                       text-decoration-line: underline;
                                       font-size: 14px;
                                       font-weight: 400;
-                                      font-family: &quot;Plus Jakarta Sans&quot;,
-                                        Arial, Helvetica, sans-serif;
+                                      font-family: 'Plus Jakarta Sans', Arial,
+                                        Helvetica, sans-serif;
                                     "
                                     target="_blank"
                                     >Terms & Conditions</a
@@ -591,8 +633,8 @@ export const invoice = ({
                                         color: white;
                                         font-size: 14px;
                                         font-weight: 400;
-                                        font-family: &quot;Plus Jakarta Sans&quot;,
-                                          Arial, Helvetica, sans-serif;
+                                        font-family: 'Plus Jakarta Sans', Arial,
+                                          Helvetica, sans-serif;
                                         margin: 0;
                                       "
                                     >
